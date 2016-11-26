@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <title>Extruder - Smoothie Project</title>
+    
+    	<script type="text/javascript" src="http://www.wikidot.com/default__flow/login__CustomDomainScript?site_id=269117"></script>
+
+    
+    <script type="text/javascript" src="http://d3g0gp89917ko0.cloudfront.net/v--951c46c9f044/common--javascript/init.combined.js"></script>
+    <script  type="text/javascript">
+        var URL_HOST = 'www.wikidot.com';
+        var URL_DOMAIN = 'wikidot.com';
+        var USE_SSL =  true ;
+        var URL_STATIC = 'http://d3g0gp89917ko0.cloudfront.net/v--951c46c9f044';
+        // global request information
+        
+        var WIKIREQUEST = {};
+        WIKIREQUEST.info = {};
+        
+        WIKIREQUEST.info.domain = "smoothieware.org";
+        WIKIREQUEST.info.siteId = 269117;
+        WIKIREQUEST.info.siteUnixName = "chibidibidiwah";
+        WIKIREQUEST.info.categoryId = 1474485;
+        WIKIREQUEST.info.themeId = 256585;
+        WIKIREQUEST.info.requestPageName = "extruder";
+        OZONE.request.timestamp = 1428653030;
+        OZONE.request.date = new Date();
+        WIKIREQUEST.info.lang = 'en';
+                WIKIREQUEST.info.pageUnixName = "extruder";
+        WIKIREQUEST.info.pageId = 18379774;
+                        WIKIREQUEST.info.lang = "en";
+        OZONE.lang = "en";
+        var isUAMobile = !!/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    </script>
+    
+    
+
+
+    
+        <script  type="text/javascript">
+    
+        require.config({
+            baseUrl: URL_STATIC + '/common--javascript',
+            paths: {
+                'jquery.ui': 'jquery-ui.min',
+                'jquery.form': 'jquery.form'
+            }
+        });
+    
+    </script>
+    
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+            
+    
+    
+    
+    
+    <meta http-equiv="content-language" content="en"/>
+    <script type="text/javascript" src="http://d3g0gp89917ko0.cloudfront.net/v--951c46c9f044/common--javascript/WIKIDOT.combined.js"></script>
+            <script type="text/javascript" src="http://d3g0gp89917ko0.cloudfront.net/v--951c46c9f044/common--bootstrap/3.2.0/bootstrap.min.js"></script>
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        
+    
+    <style type="text/css" id="internal-style">
+        
+        /* modules */
+        
+                /* bootstrap */
+            @import url(http://d3g0gp89917ko0.cloudfront.net/v--951c46c9f044/common--bootstrap/3.2.0/bootstrap.min.css);
+                
+        /* theme */
+                    @import url(http://d3g0gp89917ko0.cloudfront.net/v--951c46c9f044/common--theme/bootstrap-base/css/style.css);
+                    @import url(http://chibidibidiwah.wdfiles.com/local--theme/bare/style.css);
+            </style>
+    
+            <link href="http://d3g0gp89917ko0.cloudfront.net/v--951c46c9f044/common--fonts/awesome/3.2.1/font-awesome.min.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        
+        
+        
+    <link rel="shortcut icon" href="/local--favicon/favicon.gif"/>
+    <link rel="icon" type="image/gif" href="/local--favicon/favicon.gif"/>
+    
+            <link rel="apple-touch-icon" href="/common--images/apple-touch-icon-57x57.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="/common--images/apple-touch-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="/common--images/apple-touch-icon-114x114.png" />
+        
+        
+            <link rel="alternate" type="application/wiki" title="Edit this page" href="javascript:WIKIDOT.page.listeners.editClick()"/>
+    
+        <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-18234656-1']);
+        _gaq.push(['_setDomainName', 'none']);
+        _gaq.push(['_setAllowLinker', true]);
+        _gaq.push(['_trackPageview']);
+
+        _gaq.push(['old._setAccount', 'UA-68540-5']);
+        _gaq.push(['old._setDomainName', 'none']);
+        _gaq.push(['old._setAllowLinker', true]);
+        _gaq.push(['old._trackPageview']);
+
+                _gaq.push(['userTracker._setAccount', 'UA-26338855-1']);
+        _gaq.push(['userTracker._trackPageview']);
+            </script>
+    
+    <script type="text/javascript">
+        window.google_analytics_uacct = 'UA-18234656-1';
+        window.google_analytics_domain_name = 'none';
+    </script>
+    
+    </head>
+<body id="html-body">
+<div id="skrollr-body">
+<!---------------------------------------------------------
+  Standard Template Layout
+  Developed by the Wikidot Community
+  Version: 1.00.140723
+---------------------------------------------------------->
+
+<div class="container-wrap-wrap">
+<div class="container-wrap">
+
+<div class="container">
+<header class="header-wrap" role="banner">
+  
+  <nav class="top-bar-wrap navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container top-bar">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-top-target">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/" style="display:none">Home</a>
+      </div>
+      <div class="collapse navbar-collapse navbar-top-target">
+
+        <ul class="nav navbar-nav">
+        
+
+<ul class="nav navbar-nav">
+<li><a href="http://smoothieware.org">Smoothie Firmware</a><br /></li>
+<li><a href="/smoothieboard">SmoothieBoard</a><br /></li>
+<li><a href="/smoothiepanel">SmoothiePanel</a><br /></li>
+<li><a href="/blog">Blog</a><br /></li>
+<li><a href="/gallery">Gallery</a><br /></li>
+<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Community</a><br />
+<ul class="dropdown-menu">
+<li><a href="http://smoothieware.org/irc">IRC ( recommended )</a></li>
+<li><a href="http://smoothieware.org/forum/c-496918/general">Forum</a></li>
+<li><a href="http://groups.google.com/group/smoothieware-support">Support Mailing list</a></li>
+<li><a href="http://groups.google.com/group/smoothie-dev">Dev Mailing list</a></li>
+</ul>
+</li>
+<li><a href="/search">Search</a><br /></li>
+</ul>
+
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="header-extra-div-1"><span></span></div>
+  <div class="header-extra-div-2"><span></span></div>
+  <div class="header-extra-div-3"><span></span></div>
+</header>
+</div>
+
+
+
+
+
+
+
+
+
+
+ 
+<main class="content-wrap" role="main">
+  <div class="container content">
+    <div class="row">
+    
+      
+      <div class="main-content-wrap col-md-12">
+        <div class="main-content">
+          <div class="page-title page-header" style="display:none"><span>Extruder</span></div>
+          <div class="breadcrumbs"><a href="/configuring-smoothie">Configuring Smoothie</a> &raquo; <a href="/tools">Tools</a> &raquo; Extruder</div>
+          <div id="page-content">
+
+<div class="image-container floatright"><img src="http://chibidibidiwah.wdfiles.com/local--files/extruder/gregs.jpg" width="420px" alt="gregs.jpg" class="image" /></div>
+<h1 id="toc0"><span>Extruder module</span></h1>
+<p>Extruders are used to push plastic filament thru a hotend, to achieve the awesome feat of <a href="http://en.wikipedia.org/wiki/3D_printing">3D Printing</a>.</p>
+<p>This module controls the motor that pushes the filament, it does not take care of the hotend itself, which is the job of <a href="/temperaturecontrol">TemperatureControl</a>.</p>
+<p>The most important parameter to get your extruder module to work properly, is <tt>extruder.<a href="/module-name">module-name</a>.<strong>steps_per_mm</strong></tt>.</p>
+<p>You can create as many Extruder modules as you want, as long as you give them different module names. You can name those modules whatever you want ( as long as you stick to only alphanumerical characters ).</p>
+<h2 id="toc1"><span>Configuration</span></h2>
+<h4 id="toc2"><span>All options</span></h4>
+<p>All of the options currently supported by the Extruder module :&nbsp;</p>
+<table class="wiki-content-table">
+<tr>
+<th>Option</th>
+<th>Example value</th>
+<th>Explanation</th>
+</tr>
+</table>
+<table class="wiki-content-table">
+<tr>
+<td>extruder.<a href="/module-name">module_name</a>.enable</td>
+<td>true</td>
+<td>Whether to activate the extruder module at all. All configuration is ignored if false. Each time an <tt>extruder.<a href="/module-name">module_name</a>.enable</tt> line is encountered, an extruder module with the name «<a href="/module-name">module_name</a>» will be created.</td>
+</tr>
+<tr>
+<td>extruder.<a href="/module-name">module_name</a>.steps_per_mm</td>
+<td>140</td>
+<td>Steps/millimetre for the extruder stepper motor. This is the number of steps to move one millimetre of filament. <a href="http://smoothieware.org/extruder#steps_per_millimeter">Learn more</a></td>
+</tr>
+<tr>
+<td>extruder.<a href="/module-name">module_name</a>.filament_diameter</td>
+<td>1.74</td>
+<td>Filament diameter, in millimetres, used for volumetric extrusion control. <a href="http://smoothieware.org/extruder#filament-diameter">Learn more</a></td>
+</tr>
+<tr>
+<td>extruder.<a href="/module-name">module_name</a>.default_feed_rate</td>
+<td>600</td>
+<td>Default rate in millimetres/minute for moves where only the extruder moves. This is only used if you have never provided a feedrate via the <tt>F</tt> parameter. Once you specify a <tt>F</tt> parameter, it will be used as the Extruder feed rate until you reset the board.</td>
+</tr>
+<tr>
+<td>extruder.<a href="/module-name">module_name</a>.acceleration</td>
+<td>500</td>
+<td>Acceleration for the extruder stepper motor, in millimetres/second/second</td>
+</tr>
+<tr>
+<td>extruder.<a href="/module-name">module_name</a>.max_speed</td>
+<td>50</td>
+<td>Maximum allowable speed for the extruder stepper motor, in millimetres/second</td>
+</tr>
+<tr>
+<td>extruder.<a href="/module-name">module_name</a>.step_pin</td>
+<td><tt>2.3</tt></td>
+<td>Pin for extruder stepper motor driver's step signal</td>
+</tr>
+<tr>
+<td>extruder.<a href="/module-name">module_name</a>.dir_pin</td>
+<td><tt>0.22</tt></td>
+<td>Pin for extruder stepper motor driver's direction signal</td>
+</tr>
+<tr>
+<td>extruder.<a href="/module-name">module_name</a>.en_pin</td>
+<td><tt>0.21</tt></td>
+<td>Pin for extruder stepper motor driver's enable signal</td>
+</tr>
+<tr>
+<td>extruder.<a href="/module-name">module_name</a>.x_offset</td>
+<td>0</td>
+<td>Extruder offset from origin in millimetres for the X axis. This is useful when you have multiple extruders to specify the offset from each extruder to the first one.</td>
+</tr>
+<tr>
+<td>extruder.<a href="/module-name">module_name</a>.y_offset</td>
+<td>0</td>
+<td>Extruder offset from origin in millimetres for the Y axis.</td>
+</tr>
+<tr>
+<td>extruder.<a href="/module-name">module_name</a>.z_offset</td>
+<td>0</td>
+<td>Extruder offset from origin in millimetres for the Z axis.</td>
+</tr>
+<tr>
+<td>extruder.<a href="/module-name">module_name</a>.retract_length</td>
+<td>3</td>
+<td>Retract length in millimetres. Retract is a retractation of the filament called using the <tt>G10</tt> G-code. It is recovered ( reverted ) using the <tt>G11</tt> G-code. <a href="http://smoothieware.org/extruder#retract">Learn more about retractation</a></td>
+</tr>
+<tr>
+<td>extruder.<a href="/module-name">module_name</a>.retract_feedrate</td>
+<td>45</td>
+<td>Retract feed-rate ( filament speed ) in millimetres/second</td>
+</tr>
+<tr>
+<td>extruder.<a href="/module-name">module_name</a>.retract_recover_length</td>
+<td>0</td>
+<td>Additional length when recovering ( if you retract by 1mm, you will be recovering by 1mm plus this value )</td>
+</tr>
+<tr>
+<td>extruder.<a href="/module-name">module_name</a>.retract_recover_feedrate</td>
+<td>8</td>
+<td>Recovery feed-rate in millimetres/second (should be less than retract feedrate)</td>
+</tr>
+<tr>
+<td>extruder.<a href="/module-name">module_name</a>.retract_zlift_length</td>
+<td>0</td>
+<td>Z-lift on retract in millimeters, set to <tt>0</tt> if you want to disable retraction Z-lift. Z-lift is a small increase in the Z axis position when retracting.</td>
+</tr>
+<tr>
+<td>extruder.<a href="/module-name">module_name</a>.retract_zlift_feedrate</td>
+<td>6000</td>
+<td>Z-lift feed-rate in millimetres/minute ( Note : mm/min NOT mm/sec)</td>
+</tr>
+<tr>
+<td>delta_current</td>
+<td>1.5</td>
+<td>First extruder stepper motor driver ( M4 ) current in Amperes</td>
+</tr>
+<tr>
+<td>epsilon_current</td>
+<td>1.5</td>
+<td>Second extruder stepper motor driver ( M5 ) current in Amperes</td>
+</tr>
+</table>
+<div class="bs-callout bs-callout-info">
+<h4 id="toc3"><span>Format</span></h4>
+<p>This is the new format which allows multiple extruders. The old format is deprecated. The old &quot;one-extruder-only&quot; configuration options will still be valid for backward compatibility, but it is recommended not to use them.</p>
+<p>For example where before you used <tt>extruder_steps_per_mm</tt> you must now use <tt>extruder.<a href="/module-name">module-name</a>.steps_per_mm</tt>.</p>
+</div>
+<p><a name="steps_per_millimeter"></a></p>
+<h4 id="toc4"><span>Steps per millimeter</span></h4>
+<p>The number of steps on the stepper motor drivers smoothie needs to generate if it wants to move the filament 1 millimeter.</p>
+<p>This value depends on your stepper motor, the microstepping on your stepper motor drivers, the gear reduction ratio on the extruder assembly if any and the diameter of your hobbed pulley/bolt.</p>
+<p>A very good guide on how to find this value can be found here :&nbsp;<a href="http://reprap.org/wiki/Triffid_Hunter%27s_Calibration_Guide#E_steps">http://reprap.org/wiki/Triffid_Hunter%27s_Calibration_Guide#E_steps</a></p>
+<div class="code">
+<pre>
+<code>extruder.hotend.steps_per_mm                        140</code>
+</pre></div>
+<p><a name="filament-diameter"></a></p>
+<h4 id="toc5"><span>Filament diameter</span></h4>
+<p>This is an optional parameter for those who want to use volumetric extrusion, but are too lazy to do their own math. ;) Simply enter the machine's filament diameter here and set your slicer's filament diameter to 1.128379mm ( 2*sqrt(1/pi) ) and enjoy portable gcode! Further explanation can be found in Triffid_Hunter's guide, linked above.</p>
+<div class="bs-callout bs-callout-warning">
+<h4 id="toc6"><span>Marlin differences</span></h4>
+<p>Smoothie differs from Marlin here, Smoothie only applies the volumetric extrusion to printing moves, so when you click extrude 10mmin <a href="/pronterface">Pronterface</a> Smoothie will still do that. There is no need to calculate what 10mm is in volumetric units. Also when firmware retraction is used, the retraction length is still in mm not mm^3.</p>
+</div>
+<div class="code">
+<pre>
+<code>extruder.hotend.filament_diameter                   3.0</code>
+</pre></div>
+<p>The filament diameter can also be saved at run time with this M code</p>
+<table class="wiki-content-table">
+<tr>
+<td><tt>M200</tt></td>
+<td>Set E units for volumetric extrusion - D&lt;filament diameter&gt; set to 0 to disable volumetric extrusion</td>
+<td><tt>M200 D3.0</tt></td>
+</tr>
+</table>
+<p>and saved with <tt>M500</tt>.</p>
+<p><a name="retract"></a></p>
+<h4 id="toc7"><span>Firmware Retract</span></h4>
+<p><tt>G10</tt>/<tt>G11</tt> will cause the filament to retract and unretract, this option can be set in most current slicers.</p>
+<p>The amounts of extrusion and speed can be set with the following M codes</p>
+<table class="wiki-content-table">
+<tr>
+<td><tt>M207</tt></td>
+<td>set retract length S[positive mm] F[feedrate mm/min] Z[additional zlift/hop] Q[zlift feedrate mm/min]</td>
+<td><tt>M207 S4 F30 Z1</tt></td>
+</tr>
+<tr>
+<td><tt>M208</tt></td>
+<td>set retract recover length S[positive mm surplus to the M207&#160;S*] F[feedrate mm/min]</td>
+<td><tt>M208 S0 F8</tt></td>
+</tr>
+</table>
+<p>or can be set in config with the following settings&#8230;</p>
+<div class="code">
+<pre>
+<code>extruder.hotend.retract_length                  3               # retract length in mm
+extruder.hotend.retract_feedrate                45              # retract feedrate in mm/sec
+extruder.hotend.retract_recover_length          0               # additional length for recover
+extruder.hotend.retract_recover_feedrate        8               # recover feedrate in mm/sec (should be less than retract feedrate)
+extruder.hotend.retract_zlift_length            0               # zlift on retract in mm, 0 disables
+extruder.hotend.retract_zlift_feedrate          6000            # zlift feedrate in mm/min (Note mm/min NOT mm/sec)</code>
+</pre></div>
+<p>These can be set differently for each extruder defined.</p>
+<div class="bs-callout bs-callout-warning">
+<h4><span>Config/Gcode difference</span></h4>
+<p><strong>Please note</strong> the inconsistency here with the config specifying mm/sec and the M206/207 specifying mm/min.</p>
+<p>Sorry about that.</p>
+</div>
+<h4 id="toc8"><span>Pins</span></h4>
+<p>As all stepper motors, the extruder stepper motor needs 3 pins to be controlled :&nbsp;<strong>step</strong>, <strong>direction</strong> and <strong>enable</strong> (<a href="http://smoothieware.org/lpc1769-pin-usage">Pin Reference</a>):</p>
+<p>1st Extruder (delta)</p>
+<div class="code">
+<pre>
+<code>extruder.hotend.step_pin                     2.3
+extruder.hotend.dir_pin                      0.22
+extruder.hotend.en_pin                       0.21</code>
+</pre></div>
+<div class="bs-callout bs-callout-warning">
+<h4 id="toc9"><span>Note</span></h4>
+<p>These pins are for the delta ( 4th ) driver on a <a href="/smoothieboard">Smoothieboard</a>. This is what is most commonly used, but in another board or setup, you may have to use other pins.</p>
+</div>
+<p>2nd Extruder (epsilon)</p>
+<div class="code">
+<pre>
+<code>extruder.hotend2.step_pin                     2.8
+extruder.hotend2.dir_pin                     2.13
+extruder.hotend2.en_pin                      4.29</code>
+</pre></div>
+<div class="bs-callout bs-callout-warning">
+<h4 id="toc10"><span>Note</span></h4>
+<p>These pins are for the epsilon ( 5th ) driver on a <a href="/smoothieboard">Smoothieboard</a>. This is what is most commonly used, but in another board or setup, you may have to use other pins.</p>
+</div>
+<h4 id="toc11"><span>Advanced pin configuration</span></h4>
+<p>You can have a pin's output inverted by adding a <strong>&quot;!&quot;</strong> after this pin's number in the config line, example :</p>
+<div class="code">
+<pre>
+<code>my_pin_name                      19!</code>
+</pre></div>
+<p>There are other modifiers for pins :</p>
+<div class="bs-callout bs-callout-primary">
+<h4 id="toc12"><span>All options</span></h4>
+<table class="wiki-content-table">
+<tr>
+<td>!</td>
+<td>invert pin</td>
+</tr>
+<tr>
+<td>o</td>
+<td>set pin to open drain</td>
+</tr>
+<tr>
+<td>^</td>
+<td>set pin to pull up</td>
+</tr>
+<tr>
+<td>v</td>
+<td>set pin to pull down</td>
+</tr>
+<tr>
+<td>-</td>
+<td>to set no pullup</td>
+</tr>
+<tr>
+<td>@</td>
+<td>to set repeater mode</td>
+</tr>
+</table>
+</div>
+<h4 id="toc13"><span>Current</span></h4>
+<p>On boards which feature current control of the stepper motor drivers ( <a href="/smoothieboard">Smoothieboard</a> or 4pi ), you have to set that value for the extruder too.</p>
+<p>This is handled by the <a href="/currentcontrol">Currentcontrol</a> module, but usually, the line for the configuration of a given stepper motor is written along with it's pins, for clarity.</p>
+<div class="code">
+<pre>
+<code>delta_current                                1.5</code>
+</pre></div>
+<p>Set the value to the exact value your stepper motor is rated for ( or less, for less noise, but less torque ).</p>
+<p>Setting the current to a value higher than the recommended one causes overheating, and skipped steps.</p>
+<h2 id="toc14"><span>G-code</span></h2>
+<p>Here are the G-code commands currently supported by the Extruder module :&nbsp;</p>
+<ul>
+<li><tt>G0</tt>/<tt>G1</tt> : Move to the given coordinates. The F parameter defines speed and is remembered by subsequent commands ( specified in millimetres/minute ) (command is modal)</li>
+<li><tt>G10</tt> : Do firmware extruder retract</li>
+<li><tt>G11</tt> : Do firmware extruder un-retract</li>
+<li><tt>G90</tt> : Absolute mode ( default ) : passed coordinates will be considered absolute (command is modal)</li>
+<li><tt>G91</tt> : Relative mode : passed coordinates will be considered relative to the current point (command is modal )</li>
+<li><tt>G92</tt> : Set current position to specified coordinates</li>
+<li><tt>M17</tt> : Turn the active stepper motor driver's off</li>
+<li><tt>M18</tt> : Turn the active stepper motor driver's on</li>
+<li><tt>M82</tt> : Set absolute mode for extruder only</li>
+<li><tt>M83</tt> : Set relative mode for extruder only</li>
+<li><tt>M84</tt> : Turn the active stepper motor driver's on</li>
+<li><tt>M92</tt> : Set this axis' steps per millimetre. For example <tt>M92 E100</tt> to set for the currently active Extruder, and <tt>M92 E100 P2</tt> to set for the second extruder.</li>
+<li><tt>M114</tt> : Displays XYZ position, as well as the E position of the currently active Extruder</li>
+<li><tt>M200</tt> : Set E units for volumetric extrusion - D&lt;filament diameter&gt; set to 0 to disable volumetric extrusion, for example : <tt>M200 D3.0</tt> to set for the currently active Extruder, and <tt>M200 D3.0 P3</tt> to set for the third Extruder.</li>
+<li><tt>M204</tt> : Set acceleration in mm/sec^2, E&lt;nnn&gt; sets extruder only move acceleration, for example : <tt>M204 E500</tt>. P selects the extruder, uses the currently active extruder if omitted.</li>
+<li><tt>M207</tt> : Set retract length S[positive mm] F[feedrate mm/min] Z[additional zlift/hop] Q[zlift feedrate mm/min], for example : <tt>M207 S4 F30 Z1</tt></li>
+<li><tt>M208</tt> : Set retract recover length S[positive mm surplus to the M207&#160;S*] F[feedrate mm/min], for example : <tt>M208 S0 F8</tt></li>
+<li><tt>M221</tt> : S&lt;flow rate factor in percent&gt; : Set flow rate factor override percentage for current extruder</li>
+<li><tt>M500</tt> : Save volatile settings to an override file</li>
+<li><tt>M503</tt> : Display volatile settings</li>
+</ul>
+</div>
+          
+          <div style="height:150px"></div>
+          <div class="page-info-break"></div>
+          <div class="page-options-container"><div id="page-info">page revision: 34, last edited: <span class="odate time_1422141542 format_%25e%20%25b%20%25Y%2C%20%25H%3A%25M%20%28%25O%20ago%29">24 Jan 2015 23:19</span></div>
+            <div id="page-options-bottom"  class="page-options-bottom">
+            <a href="javascript:;" class="btn btn-default" id="edit-button">Edit</a>
+<a href="javascript:;" class="btn btn-default" id="tags-button">Tags</a>
+
+<a href="javascript:;" class="btn btn-default" id="history-button">History</a>
+<a href="javascript:;" class="btn btn-default" id="files-button">Files</a>
+<a href="javascript:;" class="btn btn-default" id="print-button">Print</a>
+<a href="javascript:;" class="btn btn-default" id="site-tools-button">Site tools</a>
+<a href="javascript:;" class="btn btn-default" id="more-options-button">+&nbsp;Options</a> 
+</div>
+<div id="page-options-bottom-2" class="page-options-bottom form-actions" style="display:none">
+    <a href="javascript:;" class="btn btn-default" id="edit-sections-button">Edit Sections</a>
+    <a href="javascript:;" class="btn btn-default" id="edit-append-button">Append</a>
+    <a href="javascript:;" class="btn btn-default" id="edit-meta-button">Edit Meta</a>
+    <a href="javascript:;" class="btn btn-default" id="watchers-button">Watchers</a> 
+    <a href="javascript:;" class="btn btn-default" id="backlinks-button">Backlinks</a> 
+    <a href="javascript:;" class="btn btn-default" id="view-source-button">Page Source</a> 
+    <a href="javascript:;" class="btn btn-default" id="parent-page-button">Parent</a> 
+    <a href="javascript:;" class="btn btn-default" id="page-block-button">Lock Page</a>    
+    <a href="javascript:;" class="btn btn-default" id="rename-move-button">Rename</a> 
+    <a href="javascript:;" class="btn btn-default" id="delete-button">Delete</a> 
+</div>
+<div id="page-options-area-bottom">
+</div>
+</div>
+          <div id="action-area" style="display: none;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+ 
+<footer class="footer-wrap" role="contentinfo">
+  <div class="container footer">
+    <div class="options" style="display: block; visibility: visible;">
+    <a href="http://www.wikidot.com/doc" id="wikidot-help-button">Help</a>
+    &nbsp;|
+    <a href="http://www.wikidot.com/legal:terms-of-service" id="wikidot-tos-button">Terms of Service</a>
+    &nbsp;|
+    <a href="http://www.wikidot.com/legal:privacy-policy" id="wikidot-privacy-button">Privacy</a>
+    &nbsp;|
+    <a href="javascript:;" id="bug-report-button" onclick="WIKIDOT.page.listeners.pageBugReport(event)">Report a bug</a>
+    &nbsp;|
+    <a href="javascript:;" id="abuse-report-button" onclick="WIKIDOT.page.listeners.flagPageObjectionable(event)">Flag as objectionable</a>
+</div>
+Powered by <a href="http://www.wikidot.com">Wikidot.com</a> 
+    <div class="license-area">Unless otherwise stated, the content of this page is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 License</a></div>
+  </div>
+  <div class="extrac-div-1"><span></span></div>
+  <div class="extrac-div-2"><span></span></div>
+  <div class="extrac-div-3"><span></span></div>
+</footer>
+ 
+
+</div> <!-- container-wrap -->
+ 
+<div class="extra-div-1"><span></span></div>
+<div class="extra-div-2"><span></span></div>
+<div class="extra-div-3"><span></span></div>
+<div class="extra-div-4"><span></span></div>
+<div class="extra-div-5"><span></span></div>
+<div class="extra-div-6"><span></span></div>
+</div> <!-- container-wrap-wrap -->
+</div>
+<div id="dummy-ondomready-block" style="display: none;" ></div>
+    <!-- Google Analytics load -->
+    <script type="text/javascript">
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+    <!-- Quantcast -->
+    <script type="text/javascript">
+    _qoptions={
+        qacct:"p-edL3gsnUjJzw-"
+    };
+    (function() {
+        var qc = document.createElement('script'); qc.type = 'text/javascript'; qc.async = true;
+        qc.src = ('https:' == document.location.protocol ? 'https://secure' : 'http://edge') + '.quantserve.com/quant.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(qc, s);
+    })();
+    </script>
+    <noscript>
+        <img src="http://pixel.quantserve.com/pixel/p-edL3gsnUjJzw-.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/>
+    </noscript>
+
+
+
+
+<div id="page-options-bottom-tips" style="display: none;">
+    <div id="edit-button-hovertip">
+        Click here to edit contents of this page.    </div>
+</div>
+<div id="page-options-bottom-2-tips"  style="display: none;">
+    <div id="edit-sections-button-hovertip">
+        Click here to toggle editing of individual sections of the page (if possible).         Watch headings for an &quot;edit&quot; link when available.    </div>
+    <div id="edit-append-button-hovertip">
+        Append content without editing the whole page source.    </div>
+    <div id="history-button-hovertip">
+        Check out how this page has evolved in the past.    </div>
+    <div id="discuss-button-hovertip">
+        If you want to discuss contents of this page - this is the easiest way to do it.    </div>
+    <div id="files-button-hovertip">
+        View and manage file attachments for this page.    </div>
+    <div id="site-tools-button-hovertip">
+        A few useful tools to manage this Site.    </div>
+    <div id="backlinks-button-hovertip">
+        See pages that link to and include this page.    </div>
+    <div id="rename-move-button-hovertip">
+        Change the name (also URL address, possibly the category) of the page.    </div>
+    <div id="view-source-button-hovertip">
+        View wiki source for this page without editing.    </div>
+    <div id="parent-page-button-hovertip">  
+        View/set parent page (used for creating breadcrumbs and structured layout).    </div>
+            <div id="abuse-report-button-hovertip">
+            Notify administrators if there is objectionable content in this page.        </div>
+        <div id="bug-report-button-hovertip">
+            Something does not work as expected? Find out what you can do.        </div>
+        <div id="wikidot-help-button-hovertip">
+            General Wikidot.com documentation and help section.        </div>
+        <div id="wikidot-tos-button-hovertip">
+            Wikidot.com Terms of Service - what you can, what you should not etc.        </div>
+        <div id="wikidot-privacy-button-hovertip">
+            Wikidot.com Privacy Policy.          
+        </div>
+    </div>
+</body>
+</html>

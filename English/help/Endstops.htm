@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <title>Endstops - Smoothie Project</title>
+    
+    	<script type="text/javascript" src="http://www.wikidot.com/default__flow/login__CustomDomainScript?site_id=269117"></script>
+
+    
+    <script type="text/javascript" src="http://d3g0gp89917ko0.cloudfront.net/v--951c46c9f044/common--javascript/init.combined.js"></script>
+    <script  type="text/javascript">
+        var URL_HOST = 'www.wikidot.com';
+        var URL_DOMAIN = 'wikidot.com';
+        var USE_SSL =  true ;
+        var URL_STATIC = 'http://d3g0gp89917ko0.cloudfront.net/v--951c46c9f044';
+        // global request information
+        
+        var WIKIREQUEST = {};
+        WIKIREQUEST.info = {};
+        
+        WIKIREQUEST.info.domain = "smoothieware.org";
+        WIKIREQUEST.info.siteId = 269117;
+        WIKIREQUEST.info.siteUnixName = "chibidibidiwah";
+        WIKIREQUEST.info.categoryId = 1474485;
+        WIKIREQUEST.info.themeId = 256585;
+        WIKIREQUEST.info.requestPageName = "endstops";
+        OZONE.request.timestamp = 1428653461;
+        OZONE.request.date = new Date();
+        WIKIREQUEST.info.lang = 'en';
+                WIKIREQUEST.info.pageUnixName = "endstops";
+        WIKIREQUEST.info.pageId = 18393377;
+                        WIKIREQUEST.info.lang = "en";
+        OZONE.lang = "en";
+        var isUAMobile = !!/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    </script>
+    
+    
+
+
+    
+        <script  type="text/javascript">
+    
+        require.config({
+            baseUrl: URL_STATIC + '/common--javascript',
+            paths: {
+                'jquery.ui': 'jquery-ui.min',
+                'jquery.form': 'jquery.form'
+            }
+        });
+    
+    </script>
+    
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+            
+    
+    
+    
+    
+    <meta http-equiv="content-language" content="en"/>
+    <script type="text/javascript" src="http://d3g0gp89917ko0.cloudfront.net/v--951c46c9f044/common--javascript/WIKIDOT.combined.js"></script>
+            <script type="text/javascript" src="http://d3g0gp89917ko0.cloudfront.net/v--951c46c9f044/common--bootstrap/3.2.0/bootstrap.min.js"></script>
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        
+    
+    <style type="text/css" id="internal-style">
+        
+        /* modules */
+        
+                /* bootstrap */
+            @import url(http://d3g0gp89917ko0.cloudfront.net/v--951c46c9f044/common--bootstrap/3.2.0/bootstrap.min.css);
+                
+        /* theme */
+                    @import url(http://d3g0gp89917ko0.cloudfront.net/v--951c46c9f044/common--theme/bootstrap-base/css/style.css);
+                    @import url(http://chibidibidiwah.wdfiles.com/local--theme/bare/style.css);
+            </style>
+    
+            <link href="http://d3g0gp89917ko0.cloudfront.net/v--951c46c9f044/common--fonts/awesome/3.2.1/font-awesome.min.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        
+        
+        
+    <link rel="shortcut icon" href="/local--favicon/favicon.gif"/>
+    <link rel="icon" type="image/gif" href="/local--favicon/favicon.gif"/>
+    
+            <link rel="apple-touch-icon" href="/common--images/apple-touch-icon-57x57.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="/common--images/apple-touch-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="/common--images/apple-touch-icon-114x114.png" />
+        
+        
+            <link rel="alternate" type="application/wiki" title="Edit this page" href="javascript:WIKIDOT.page.listeners.editClick()"/>
+    
+        <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-18234656-1']);
+        _gaq.push(['_setDomainName', 'none']);
+        _gaq.push(['_setAllowLinker', true]);
+        _gaq.push(['_trackPageview']);
+
+        _gaq.push(['old._setAccount', 'UA-68540-5']);
+        _gaq.push(['old._setDomainName', 'none']);
+        _gaq.push(['old._setAllowLinker', true]);
+        _gaq.push(['old._trackPageview']);
+
+                _gaq.push(['userTracker._setAccount', 'UA-26338855-1']);
+        _gaq.push(['userTracker._trackPageview']);
+            </script>
+    
+    <script type="text/javascript">
+        window.google_analytics_uacct = 'UA-18234656-1';
+        window.google_analytics_domain_name = 'none';
+    </script>
+    
+    </head>
+<body id="html-body">
+<div id="skrollr-body">
+<!---------------------------------------------------------
+  Standard Template Layout
+  Developed by the Wikidot Community
+  Version: 1.00.140723
+---------------------------------------------------------->
+
+<div class="container-wrap-wrap">
+<div class="container-wrap">
+
+<div class="container">
+<header class="header-wrap" role="banner">
+  
+  <nav class="top-bar-wrap navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container top-bar">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-top-target">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/" style="display:none">Home</a>
+      </div>
+      <div class="collapse navbar-collapse navbar-top-target">
+
+        <ul class="nav navbar-nav">
+        
+
+<ul class="nav navbar-nav">
+<li><a href="http://smoothieware.org">Smoothie Firmware</a><br /></li>
+<li><a href="/smoothieboard">SmoothieBoard</a><br /></li>
+<li><a href="/smoothiepanel">SmoothiePanel</a><br /></li>
+<li><a href="/blog">Blog</a><br /></li>
+<li><a href="/gallery">Gallery</a><br /></li>
+<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Community</a><br />
+<ul class="dropdown-menu">
+<li><a href="http://smoothieware.org/irc">IRC ( recommended )</a></li>
+<li><a href="http://smoothieware.org/forum/c-496918/general">Forum</a></li>
+<li><a href="http://groups.google.com/group/smoothieware-support">Support Mailing list</a></li>
+<li><a href="http://groups.google.com/group/smoothie-dev">Dev Mailing list</a></li>
+</ul>
+</li>
+<li><a href="/search">Search</a><br /></li>
+</ul>
+
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="header-extra-div-1"><span></span></div>
+  <div class="header-extra-div-2"><span></span></div>
+  <div class="header-extra-div-3"><span></span></div>
+</header>
+</div>
+
+
+
+
+
+
+
+
+
+
+ 
+<main class="content-wrap" role="main">
+  <div class="container content">
+    <div class="row">
+    
+      
+      <div class="main-content-wrap col-md-12">
+        <div class="main-content">
+          <div class="page-title page-header" style="display:none"><span>Endstops</span></div>
+          <div class="breadcrumbs"><a href="/configuring-smoothie">Configuring Smoothie</a> &raquo; <a href="/tools">Tools</a> &raquo; Endstops</div>
+          <div id="page-content">
+
+<p>Endstops are small switches at the end of axes.</p>
+<p>They can be used to &quot;home&quot;, that is find the end of an axis so that the controller is then aware of it's current position.</p>
+<p>They can also be used as limit switches, to make sure the machine will never move out of an axis' boundaries.</p>
+<h2 id="toc0"><span>Configuration</span></h2>
+<p>The config settings for Endstops are as follows :</p>
+<table class="wiki-content-table">
+<tr>
+<th>Option</th>
+<th>Example value</th>
+<th>Explanation</th>
+</tr>
+</table>
+<table class="wiki-content-table">
+<tr>
+<td>endstops_enable</td>
+<td>true</td>
+<td>The endstop module is enabled if this is set to true. All of it's parameters are ignored otherwise.</td>
+</tr>
+<tr>
+<td>corexy_homing</td>
+<td>false</td>
+<td>Set to true if this machine uses a <tt>corexy</tt> or a <tt>h-bot</tt> arm solution</td>
+</tr>
+<tr>
+<td>delta_homing</td>
+<td>false</td>
+<td>Set to true if this machine uses a <tt>linear_delta</tt> arm solution</td>
+</tr>
+<tr>
+<td>scara_homing</td>
+<td>false</td>
+<td>Set to true if this machine uses a <tt>scara</tt> arm solution</td>
+</tr>
+<tr>
+<td>alpha_min_endstop</td>
+<td><tt>1.24^</tt></td>
+<td>Alpha ( X axis or alpha tower ) minimum limit endstop. Set to <tt>nc</tt> if not installed on your machine.</td>
+</tr>
+<tr>
+<td>alpha_max_endstop</td>
+<td><tt>1.25^</tt></td>
+<td>Alpha ( X axis or alpha tower ) maximum limit endstop. Set to <tt>nc</tt> if not installed on your machine.</td>
+</tr>
+<tr>
+<td>alpha_homing_direction</td>
+<td>home_to_min</td>
+<td>In which direction to home. If set to <tt>home_to_min</tt>, homing ( using the <tt>G28</tt> G-code ) will move until it hits the minimum endstop and then set the current position to <tt>alpha_min</tt>. If set to <tt>home_to_max</tt>, homing will move until it hits the maximum endstop, and then set the current position to <tt>alpha_max</tt></td>
+</tr>
+<tr>
+<td>alpha_min</td>
+<td>0</td>
+<td>This gets loaded after homing when alpha_homing_direction is set to <tt>home_to_min</tt> and the minimum endstop is hit.</td>
+</tr>
+<tr>
+<td>alpha_max</td>
+<td>200</td>
+<td>This gets loaded after homing when alpha_homing_direction is set to <tt>home_to_max</tt> and the maximum endstop is hit.</td>
+</tr>
+<tr>
+<td>beta_min_endstop</td>
+<td><tt>1.26^</tt></td>
+<td>Beta ( Y axis or beta tower ) minimum limit endstop. Set to <tt>nc</tt> if not installed on your machine.</td>
+</tr>
+<tr>
+<td>beta_max_endstop</td>
+<td><tt>1.27^</tt></td>
+<td>Beta ( Y axis or beta tower ) maximum limit endstop. Set to <tt>nc</tt> if not installed on your machine.</td>
+</tr>
+<tr>
+<td>beta_homing_direction</td>
+<td>home_to_min</td>
+<td>In which direction to home. If set to <tt>home_to_min</tt>, homing ( using the <tt>G28</tt> G-code ) will move until it hits the minimum endstop and then set the current position to <tt>beta_min</tt>. If set to <tt>home_to_max</tt>, homing will move until it hits the maximum endstop, and then set the current position to <tt>beta_max</tt></td>
+</tr>
+<tr>
+<td>beta_min</td>
+<td>0</td>
+<td>This gets loaded after homing when beta_homing_direction is set to <tt>home_to_min</tt> and the minimum endstop is hit.</td>
+</tr>
+<tr>
+<td>beta_max</td>
+<td>200</td>
+<td>This gets loaded after homing when beta_homing_direction is set to <tt>home_to_max</tt> and the maximum endstop is hit.</td>
+</tr>
+<tr>
+<td>gamma_min_endstop</td>
+<td><tt>1.28^</tt></td>
+<td>Gamma ( Z axis or gamma tower ) minimum limit endstop. Set to <tt>nc</tt> if not installed on your machine.</td>
+</tr>
+<tr>
+<td>gamma_max_endstop</td>
+<td><tt>1.29^</tt></td>
+<td>Gamma ( Z axis or gamma tower ) maximum limit endstop. Set to <tt>nc</tt> if not installed on your machine.</td>
+</tr>
+<tr>
+<td>gamma_homing_direction</td>
+<td>home_to_min</td>
+<td>In which direction to home. If set to <tt>home_to_min</tt>, homing ( using the <tt>G28</tt> G-code ) will move until it hits the minimum endstop and then set the current position to <tt>gamma_min</tt>. If set to <tt>home_to_max</tt>, homing will move until it hits the maximum endstop, and then set the current position to <tt>gamma_max</tt></td>
+</tr>
+<tr>
+<td>gamma_min</td>
+<td>0</td>
+<td>This gets loaded after homing when gamma_homing_direction is set to <tt>home_to_min</tt> and the minimum endstop is hit.</td>
+</tr>
+<tr>
+<td>gamma_max</td>
+<td>200</td>
+<td>This gets loaded after homing when gamma_homing_direction is set to <tt>home_to_max</tt> and the maximum endstop is hit.</td>
+</tr>
+<tr>
+<td>homing_order</td>
+<td>XYZ</td>
+<td>Optional order in which axis will home, default is they all home at the same time, if this is set it will force each axis to home one at a time in the specified order. For example <tt>XZY</tt> means : <tt>X</tt> axis followed by <tt>Z</tt>, then <tt>Y</tt> last.</td>
+</tr>
+<tr>
+<td>alpha_limit_enable</td>
+<td>false</td>
+<td>If set to true, the machine will stop if one of the alpha ( X axis or alpha tower ) endstops are hit</td>
+</tr>
+<tr>
+<td>beta_limit_enable</td>
+<td>false</td>
+<td>If set to true, the machine will stop if one of the beta ( Y axis or beta tower ) endstops are hit</td>
+</tr>
+<tr>
+<td>gamma_limit_enable</td>
+<td>false</td>
+<td>If set to true, the machine will stop if one of the gamma ( Z axis or gamma tower ) endstops are hit</td>
+</tr>
+<tr>
+<td>alpha_fast_homing_rate_mm_s</td>
+<td>50</td>
+<td>Speed, in millimetres/second, at which to home for the alpha actuator ( X axis or alpha tower )</td>
+</tr>
+<tr>
+<td>beta_fast_homing_rate_mm_s</td>
+<td>50</td>
+<td>Speed, in millimetres/second, at which to home for the beta actuator ( Y axis or beta tower )</td>
+</tr>
+<tr>
+<td>gamma_fast_homing_rate_mm_s</td>
+<td>4</td>
+<td>Speed, in millimetres/second, at which to home for the gamma actuator ( Z axis or gamma tower )</td>
+</tr>
+<tr>
+<td>alpha_homing_retract_mm</td>
+<td>5</td>
+<td>Distance to retract the alpha actuator ( X axis or alpha tower ) once the endstop is first hit, before re-homing at a slower speed.</td>
+</tr>
+<tr>
+<td>beta_homing_retract_mm</td>
+<td>5</td>
+<td>Distance to retract the beta actuator ( Y axis or beta tower ) once the endstop is first hit, before re-homing at a slower speed.</td>
+</tr>
+<tr>
+<td>gamma_homing_retract_mm</td>
+<td>1</td>
+<td>Distance to retract the alpha actuator ( Z axis or gamma tower ) once the endstop is first hit, before re-homing at a slower speed.</td>
+</tr>
+<tr>
+<td>alpha_slow_homing_rate_mm_s</td>
+<td>25</td>
+<td>Speed, in millimetres/second, at which to re-home for the alpha actuator ( X axis or alpha tower ) once the endstop is hit once.</td>
+</tr>
+<tr>
+<td>beta_slow_homing_rate_mm_s</td>
+<td>25</td>
+<td>Speed, in millimetres/second, at which to re-home for the beta actuator ( Y axis or beta tower ) once the endstop is hit once.</td>
+</tr>
+<tr>
+<td>gamma_slow_homing_rate_mm_s</td>
+<td>2</td>
+<td>Speed, in millimetres/second, at which to re-home for the gamma actuator ( Z axis or gamma tower ) once the endstop is hit once.</td>
+</tr>
+<tr>
+<td>endstop_debounce_count</td>
+<td>100</td>
+<td>Debounce each endstop pin over this number of values. Set to <tt>100</tt> if your endstops are too noisy and give false readings.</td>
+</tr>
+<tr>
+<td>alpha_trim</td>
+<td>-0.1</td>
+<td>Software trim for alpha ( X axis or alpha tower ) stepper endstop (in millimetres ). When the endstop is hit, the axis will move this distance towards the endstop (negative values move endstop away from the endstop )</td>
+</tr>
+<tr>
+<td>beta_trim</td>
+<td>-0.1</td>
+<td>Software trim for beta ( Y axis or beta tower ) stepper endstop (in millimetres ). When the endstop is hit, the axis will move this distance towards the endstop (negative values move endstop away from the endstop )</td>
+</tr>
+<tr>
+<td>gamma_trim</td>
+<td>-0.1</td>
+<td>Software trim for gamma ( Z axis or gamma tower ) stepper endstop (in millimetres ). When the endstop is hit, the axis will move this distance towards the endstop (negative values move endstop away from the endstop )</td>
+</tr>
+<tr>
+<td>move_to_origin_after_home</td>
+<td>false</td>
+<td>If set to true, once homing is complete, the machine will move to it's origin point</td>
+</tr>
+</table>
+<h2 id="toc1"><span>Reading</span></h2>
+<p>You can use the <tt>M119</tt> command to show the status of the configured endstops.</p>
+<p><tt>M119</tt> answers this way :&nbsp;</p>
+<div class="code">
+<pre>
+<code>min_x:0 min_y:0 min_z:0 max_x:0 max_y:0 max_z:0
+ok</code>
+</pre></div>
+<p>If an endstop is not connected the pin should be set to «<tt>nc</tt>», and it's value will not be reported.</p>
+<p>This is in particular useful when setting up your machine : you can issue the <tt>M119</tt> command with your endstops unpressed, check that the values are 0 ( which would be correct ), and issue the command again with your endstops pressed, check that the values are all 1 ( which is correct for pressed endstops ).</p>
+<p>If an endstop always reports 0, it probably means that it is not wired correctly.</p>
+<p>If an endstop's values are inverted, it probably means you wired the pin as NO when it is NC, or the opposite.</p>
+<p>You can reverse a pin in the configuration file by adding or removing a «<tt>!</tt>» character after the pin number ( see <a href="http://smoothieware.org/pin-configuration">Pin Configuration</a> ).</p>
+<p>For example if the beta min endstop is inverted in your diagnostics, change :</p>
+<div class="code">
+<pre>
+<code>beta_min_endstop   1.26^</code>
+</pre></div>
+<p>to :</p>
+<div class="code">
+<pre>
+<code>beta_min_endstop   1.26^!</code>
+</pre></div>
+<h2 id="toc2"><span>Homing</span></h2>
+<p>You use the <tt>G28</tt> command to home your machine.</p>
+<p>For example :&nbsp;</p>
+<div class="code">
+<pre>
+<code>G28 Z0</code>
+</pre></div>
+<p>will home the Z axis.</p>
+<p>And :</p>
+<div class="code">
+<pre>
+<code>G28</code>
+</pre></div>
+<p>will home all three axes.</p>
+<div class="bs-callout bs-callout-warning">
+<h4 id="toc3"><span>Note</span></h4>
+<p>Currently only min <strong>or</strong> max endstops can be used for homing.</p>
+</div>
+<h2 id="toc4"><span>Limit switches</span></h2>
+<p><a name="limit"></a></p>
+<p>Endstops may be configured to act as limit switches, during normal operations if any enabled limit switch is triggered the system will halt and all operations will stop, it will send a !! command to the host to stop it sending any more data (a recent dev octoprint and recent <a href="/pronterface">Pronterface</a> support this).<br />
+A reset will be required to continue, or sending M999, if that option is used the endstops will be disabled until the limit switch is released, make sure you jog away from the endstop though.</p>
+<div class="bs-callout bs-callout-warning">
+<h4 id="toc5"><span>Linear deltas</span></h4>
+<p>If you are using the <tt>linear_delta</tt> arm solution you have to use large enough negative trim values to move away far enough from the switches after homing. Otherwise the switches will trigger directly after homing and disable the system. If problems occur you should keep the limits disabled for deltas. <strong>NOTE</strong> Using limit switches on a delta is not recommended and is not supported, use at your own risk.</p>
+</div>
+<p>To enable enstops as limit switches the following config options can be used, they are disabled by default.</p>
+<div class="code">
+<pre>
+<code>alpha_limit_enable                          true            # set to true to enable X min and max limit switches
+beta_limit_enable                           true            # set to true to enable Y min and max limit switches
+gamma_limit_enable                          true            # set to true to enable Z min and max limit switches</code>
+</pre></div>
+<p>When one axis is enabled both min and max endstops will be enabled as limit switches, setting an endstop pin to nc will disable it.</p>
+<div class="bs-callout bs-callout-warning">
+<h4 id="toc6"><span>Retract</span></h4>
+<p>After homing the axis is usually left triggering the endstop, this would prevent that axis from moving, so when limit switches are enabled after homing the axis will back off the endstop by the <tt>*.homing_retract_mm</tt> amount.</p>
+<p>The downside is if you home to 0 and at 0 the endstop is triggered going to 0,0 will cause a limit switch to fire. The workaround is to set homing offset to -5 or enough to back off the endstop so when you go to 0,0 it does not trigger the endstop.</p>
+<p>That way you can home, and safely go to 0 without triggering a limit switch event. An alternativve is to set min/max X/Y to -5 rather than 0.</p>
+</div>
+<div class="bs-callout bs-callout-warning">
+<h4 id="toc7"><span>Azteeg X5</span></h4>
+<p>On an Azteeg X5 mini with only 3 endstop connectors you can still connect two microswitches in series set to normally closed to ground and connected to the relevant input, this will allow for min and max limit switches to still work.</p>
+</div>
+</div>
+          
+          <div style="height:150px"></div>
+          <div class="page-info-break"></div>
+          <div class="page-options-container"><div id="page-info">page revision: 38, last edited: <span class="odate time_1423142694 format_%25e%20%25b%20%25Y%2C%20%25H%3A%25M%20%28%25O%20ago%29">05 Feb 2015 13:24</span></div>
+            <div id="page-options-bottom"  class="page-options-bottom">
+            <a href="javascript:;" class="btn btn-default" id="edit-button">Edit</a>
+<a href="javascript:;" class="btn btn-default" id="tags-button">Tags</a>
+
+<a href="javascript:;" class="btn btn-default" id="history-button">History</a>
+<a href="javascript:;" class="btn btn-default" id="files-button">Files</a>
+<a href="javascript:;" class="btn btn-default" id="print-button">Print</a>
+<a href="javascript:;" class="btn btn-default" id="site-tools-button">Site tools</a>
+<a href="javascript:;" class="btn btn-default" id="more-options-button">+&nbsp;Options</a> 
+</div>
+<div id="page-options-bottom-2" class="page-options-bottom form-actions" style="display:none">
+    <a href="javascript:;" class="btn btn-default" id="edit-sections-button">Edit Sections</a>
+    <a href="javascript:;" class="btn btn-default" id="edit-append-button">Append</a>
+    <a href="javascript:;" class="btn btn-default" id="edit-meta-button">Edit Meta</a>
+    <a href="javascript:;" class="btn btn-default" id="watchers-button">Watchers</a> 
+    <a href="javascript:;" class="btn btn-default" id="backlinks-button">Backlinks</a> 
+    <a href="javascript:;" class="btn btn-default" id="view-source-button">Page Source</a> 
+    <a href="javascript:;" class="btn btn-default" id="parent-page-button">Parent</a> 
+    <a href="javascript:;" class="btn btn-default" id="page-block-button">Lock Page</a>    
+    <a href="javascript:;" class="btn btn-default" id="rename-move-button">Rename</a> 
+    <a href="javascript:;" class="btn btn-default" id="delete-button">Delete</a> 
+</div>
+<div id="page-options-area-bottom">
+</div>
+</div>
+          <div id="action-area" style="display: none;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+ 
+<footer class="footer-wrap" role="contentinfo">
+  <div class="container footer">
+    <div class="options" style="display: block; visibility: visible;">
+    <a href="http://www.wikidot.com/doc" id="wikidot-help-button">Help</a>
+    &nbsp;|
+    <a href="http://www.wikidot.com/legal:terms-of-service" id="wikidot-tos-button">Terms of Service</a>
+    &nbsp;|
+    <a href="http://www.wikidot.com/legal:privacy-policy" id="wikidot-privacy-button">Privacy</a>
+    &nbsp;|
+    <a href="javascript:;" id="bug-report-button" onclick="WIKIDOT.page.listeners.pageBugReport(event)">Report a bug</a>
+    &nbsp;|
+    <a href="javascript:;" id="abuse-report-button" onclick="WIKIDOT.page.listeners.flagPageObjectionable(event)">Flag as objectionable</a>
+</div>
+Powered by <a href="http://www.wikidot.com">Wikidot.com</a> 
+    <div class="license-area">Unless otherwise stated, the content of this page is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 License</a></div>
+  </div>
+  <div class="extrac-div-1"><span></span></div>
+  <div class="extrac-div-2"><span></span></div>
+  <div class="extrac-div-3"><span></span></div>
+</footer>
+ 
+
+</div> <!-- container-wrap -->
+ 
+<div class="extra-div-1"><span></span></div>
+<div class="extra-div-2"><span></span></div>
+<div class="extra-div-3"><span></span></div>
+<div class="extra-div-4"><span></span></div>
+<div class="extra-div-5"><span></span></div>
+<div class="extra-div-6"><span></span></div>
+</div> <!-- container-wrap-wrap -->
+</div>
+<div id="dummy-ondomready-block" style="display: none;" ></div>
+    <!-- Google Analytics load -->
+    <script type="text/javascript">
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+    <!-- Quantcast -->
+    <script type="text/javascript">
+    _qoptions={
+        qacct:"p-edL3gsnUjJzw-"
+    };
+    (function() {
+        var qc = document.createElement('script'); qc.type = 'text/javascript'; qc.async = true;
+        qc.src = ('https:' == document.location.protocol ? 'https://secure' : 'http://edge') + '.quantserve.com/quant.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(qc, s);
+    })();
+    </script>
+    <noscript>
+        <img src="http://pixel.quantserve.com/pixel/p-edL3gsnUjJzw-.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/>
+    </noscript>
+
+
+
+
+<div id="page-options-bottom-tips" style="display: none;">
+    <div id="edit-button-hovertip">
+        Click here to edit contents of this page.    </div>
+</div>
+<div id="page-options-bottom-2-tips"  style="display: none;">
+    <div id="edit-sections-button-hovertip">
+        Click here to toggle editing of individual sections of the page (if possible).         Watch headings for an &quot;edit&quot; link when available.    </div>
+    <div id="edit-append-button-hovertip">
+        Append content without editing the whole page source.    </div>
+    <div id="history-button-hovertip">
+        Check out how this page has evolved in the past.    </div>
+    <div id="discuss-button-hovertip">
+        If you want to discuss contents of this page - this is the easiest way to do it.    </div>
+    <div id="files-button-hovertip">
+        View and manage file attachments for this page.    </div>
+    <div id="site-tools-button-hovertip">
+        A few useful tools to manage this Site.    </div>
+    <div id="backlinks-button-hovertip">
+        See pages that link to and include this page.    </div>
+    <div id="rename-move-button-hovertip">
+        Change the name (also URL address, possibly the category) of the page.    </div>
+    <div id="view-source-button-hovertip">
+        View wiki source for this page without editing.    </div>
+    <div id="parent-page-button-hovertip">  
+        View/set parent page (used for creating breadcrumbs and structured layout).    </div>
+            <div id="abuse-report-button-hovertip">
+            Notify administrators if there is objectionable content in this page.        </div>
+        <div id="bug-report-button-hovertip">
+            Something does not work as expected? Find out what you can do.        </div>
+        <div id="wikidot-help-button-hovertip">
+            General Wikidot.com documentation and help section.        </div>
+        <div id="wikidot-tos-button-hovertip">
+            Wikidot.com Terms of Service - what you can, what you should not etc.        </div>
+        <div id="wikidot-privacy-button-hovertip">
+            Wikidot.com Privacy Policy.          
+        </div>
+    </div>
+</body>
+</html>

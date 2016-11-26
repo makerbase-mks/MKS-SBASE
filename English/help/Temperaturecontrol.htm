@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <title>Temperaturecontrol - Smoothie Project</title>
+    
+    	<script type="text/javascript" src="http://www.wikidot.com/default__flow/login__CustomDomainScript?site_id=269117"></script>
+
+    
+    <script type="text/javascript" src="http://d3g0gp89917ko0.cloudfront.net/v--951c46c9f044/common--javascript/init.combined.js"></script>
+    <script  type="text/javascript">
+        var URL_HOST = 'www.wikidot.com';
+        var URL_DOMAIN = 'wikidot.com';
+        var USE_SSL =  true ;
+        var URL_STATIC = 'http://d3g0gp89917ko0.cloudfront.net/v--951c46c9f044';
+        // global request information
+        
+        var WIKIREQUEST = {};
+        WIKIREQUEST.info = {};
+        
+        WIKIREQUEST.info.domain = "smoothieware.org";
+        WIKIREQUEST.info.siteId = 269117;
+        WIKIREQUEST.info.siteUnixName = "chibidibidiwah";
+        WIKIREQUEST.info.categoryId = 1474485;
+        WIKIREQUEST.info.themeId = 256585;
+        WIKIREQUEST.info.requestPageName = "temperaturecontrol";
+        OZONE.request.timestamp = 1427870121;
+        OZONE.request.date = new Date();
+        WIKIREQUEST.info.lang = 'en';
+                WIKIREQUEST.info.pageUnixName = "temperaturecontrol";
+        WIKIREQUEST.info.pageId = 18380612;
+                        WIKIREQUEST.info.lang = "en";
+        OZONE.lang = "en";
+        var isUAMobile = !!/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    </script>
+    
+    
+
+
+    
+        <script  type="text/javascript">
+    
+        require.config({
+            baseUrl: URL_STATIC + '/common--javascript',
+            paths: {
+                'jquery.ui': 'jquery-ui.min',
+                'jquery.form': 'jquery.form'
+            }
+        });
+    
+    </script>
+    
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+            
+    
+    
+    
+    
+    <meta http-equiv="content-language" content="en"/>
+    <script type="text/javascript" src="http://d3g0gp89917ko0.cloudfront.net/v--951c46c9f044/common--javascript/WIKIDOT.combined.js"></script>
+            <script type="text/javascript" src="http://d3g0gp89917ko0.cloudfront.net/v--951c46c9f044/common--bootstrap/3.2.0/bootstrap.min.js"></script>
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        
+    
+    <style type="text/css" id="internal-style">
+        
+        /* modules */
+        
+                /* bootstrap */
+            @import url(http://d3g0gp89917ko0.cloudfront.net/v--951c46c9f044/common--bootstrap/3.2.0/bootstrap.min.css);
+                
+        /* theme */
+                    @import url(http://d3g0gp89917ko0.cloudfront.net/v--951c46c9f044/common--theme/bootstrap-base/css/style.css);
+                    @import url(http://chibidibidiwah.wdfiles.com/local--theme/bare/style.css);
+            </style>
+    
+            <link href="http://d3g0gp89917ko0.cloudfront.net/v--951c46c9f044/common--fonts/awesome/3.2.1/font-awesome.min.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        
+        
+        
+    <link rel="shortcut icon" href="/local--favicon/favicon.gif"/>
+    <link rel="icon" type="image/gif" href="/local--favicon/favicon.gif"/>
+    
+            <link rel="apple-touch-icon" href="/common--images/apple-touch-icon-57x57.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="/common--images/apple-touch-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="/common--images/apple-touch-icon-114x114.png" />
+        
+        
+            <link rel="alternate" type="application/wiki" title="Edit this page" href="javascript:WIKIDOT.page.listeners.editClick()"/>
+    
+        <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-18234656-1']);
+        _gaq.push(['_setDomainName', 'none']);
+        _gaq.push(['_setAllowLinker', true]);
+        _gaq.push(['_trackPageview']);
+
+        _gaq.push(['old._setAccount', 'UA-68540-5']);
+        _gaq.push(['old._setDomainName', 'none']);
+        _gaq.push(['old._setAllowLinker', true]);
+        _gaq.push(['old._trackPageview']);
+
+                _gaq.push(['userTracker._setAccount', 'UA-26338855-1']);
+        _gaq.push(['userTracker._trackPageview']);
+            </script>
+    
+    <script type="text/javascript">
+        window.google_analytics_uacct = 'UA-18234656-1';
+        window.google_analytics_domain_name = 'none';
+    </script>
+    
+    </head>
+<body id="html-body">
+<div id="skrollr-body">
+<!---------------------------------------------------------
+  Standard Template Layout
+  Developed by the Wikidot Community
+  Version: 1.00.140723
+---------------------------------------------------------->
+
+<div class="container-wrap-wrap">
+<div class="container-wrap">
+
+<div class="container">
+<header class="header-wrap" role="banner">
+  
+  <nav class="top-bar-wrap navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container top-bar">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-top-target">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/" style="display:none">Home</a>
+      </div>
+      <div class="collapse navbar-collapse navbar-top-target">
+
+        <ul class="nav navbar-nav">
+        
+
+<ul class="nav navbar-nav">
+<li><a href="http://smoothieware.org">Smoothie Firmware</a><br /></li>
+<li><a href="/smoothieboard">SmoothieBoard</a><br /></li>
+<li><a href="/smoothiepanel">SmoothiePanel</a><br /></li>
+<li><a href="/blog">Blog</a><br /></li>
+<li><a href="/gallery">Gallery</a><br /></li>
+<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Community</a><br />
+<ul class="dropdown-menu">
+<li><a href="http://smoothieware.org/irc">IRC ( recommended )</a></li>
+<li><a href="http://smoothieware.org/forum/c-496918/general">Forum</a></li>
+<li><a href="http://groups.google.com/group/smoothieware-support">Support Mailing list</a></li>
+<li><a href="http://groups.google.com/group/smoothie-dev">Dev Mailing list</a></li>
+</ul>
+</li>
+<li><a href="/search">Search</a><br /></li>
+</ul>
+
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="header-extra-div-1"><span></span></div>
+  <div class="header-extra-div-2"><span></span></div>
+  <div class="header-extra-div-3"><span></span></div>
+</header>
+</div>
+
+
+
+
+
+
+
+
+
+
+ 
+<main class="content-wrap" role="main">
+  <div class="container content">
+    <div class="row">
+    
+      
+      <div class="main-content-wrap col-md-12">
+        <div class="main-content">
+          <div class="page-title page-header" style="display:none"><span>Temperaturecontrol</span></div>
+          <div class="breadcrumbs"><a href="/configuring-smoothie">Configuring Smoothie</a> &raquo; <a href="/tools">Tools</a> &raquo; Temperaturecontrol</div>
+          <div id="page-content">
+
+<div class="image-container floatright"><img src="http://1.bp.blogspot.com/-00QOc_WaJMA/ULwmTTgrjdI/AAAAAAAAAIM/BPOgQuGsFZU/s1600/v_and_vb.JPG" style="width: 420px" alt="v_and_vb.JPG" class="image" /></div>
+<div id="toc" class="floatright">
+<div id="toc-action-bar"><a href="javascript:;" onclick="WIKIDOT.page.listeners.foldToc(event)">Fold</a><a style="display: none" href="javascript:;" onclick="WIKIDOT.page.listeners.unfoldToc(event)">Unfold</a></div>
+<div class="title">Table of Contents</div>
+<div id="toc-list">
+<div style="margin-left: 1em;"><a href="#toc0">Temperaturecontrol</a></div>
+<div style="margin-left: 2em;"><a href="#toc1">Multiple modules</a></div>
+<div style="margin-left: 2em;"><a href="#toc2">Configuration</a></div>
+<div style="margin-left: 3em;"><a href="#toc3">All configuration options</a></div>
+<div style="margin-left: 3em;"><a href="#toc4">Reading temperatures</a></div>
+<div style="margin-left: 4em;"><a href="#toc5">Thermistor</a></div>
+<div style="margin-left: 4em;"><a href="#toc6">Choosing the right thermistor</a></div>
+<div style="margin-left: 4em;"><a href="#toc7">Thermocouple</a></div>
+<div style="margin-left: 3em;"><a href="#toc8">Heating things up.</a></div>
+<div style="margin-left: 4em;"><a href="#toc9">All options</a></div>
+<div style="margin-left: 3em;"><a href="#toc10">Controlling with G-codes</a></div>
+<div style="margin-left: 3em;"><a href="#toc11">Reading with G-code</a></div>
+<div style="margin-left: 3em;"><a href="#toc12">Bang Bang Control</a></div>
+<div style="margin-left: 3em;"><a href="#toc13">PID</a></div>
+<div style="margin-left: 3em;"><a href="#toc14">PID autotuning</a></div>
+<div style="margin-left: 3em;"><a href="#toc15">Fine Tuning</a></div>
+<div style="margin-left: 4em;"><a href="#toc16">If you are using a 12v heater on a 24v system</a></div>
+<div style="margin-left: 4em;"><a href="#toc17">If you are getting 10°C or more initial overshoot of temperature</a></div>
+<div style="margin-left: 4em;"><a href="#toc18">To avoid accidental setting of too high a temperature</a></div>
+<div style="margin-left: 2em;"><a href="#toc19">Supported G-codes</a></div>
+</div>
+</div>
+<h1 id="toc0"><span>Temperaturecontrol</span></h1>
+<p>This module reads temperature reading sensors ( thermistors ) and uses heater and cooler elements to maintain a set temperature.</p>
+<p>This is used for example for <a href="/extruder">extruder</a> hotends, or heated beds.</p>
+<h2 id="toc1"><span>Multiple modules</span></h2>
+<p>In Smoothie you do not get just one TemperatureControl module. You can actually create as many as you want, simply by adding them to the <a href="http://smoothieware.org/configuring-smoothie">configuration file</a>.</p>
+<p>It goes something like this :&nbsp;</p>
+<div class="code">
+<pre>
+<code>temperature_control.hotend.enable                    true
+temperature_control.hotend.thermistor_pin            0.23
+etc ...
+
+temperature_control.bed.enable                       true
+temperature_control.bed.thermistor_pin               0.24
+etc ...</code>
+</pre></div>
+<p>This will create and configure two separate TemperatureControl modules that will act completely independently from each other.</p>
+<p>The line that effectively &quot;creates&quot; the module is the <strong>enable</strong> option. If set to true, a module is created and further configuration is read. If set to false, further configuration for this module is ignored as no module is created.</p>
+<p>In the <strong>Configuration</strong> section bellow, the first two parts ( <tt>temperature_control.module_name</tt> ) of the configuration are sometimes omitted for conciseness, but have to be added in your actual configuration file ( <a href="http://smoothieware.org/configuring-smoothie">see example</a> ).</p>
+<h2 id="toc2"><span>Configuration</span></h2>
+<h3 id="toc3"><span>All configuration options</span></h3>
+<p>Here are all the possible configuration options for your TemperatureControl modules</p>
+<table class="wiki-content-table">
+<tr>
+<th>Option</th>
+<th>Example value</th>
+<th>Explanation</th>
+</tr>
+</table>
+<table class="wiki-content-table">
+<tr>
+<td>temperature_control.<a href="/module-name">module_name</a>.enable</td>
+<td>true</td>
+<td>Whether to activate this temperaturecontrol module. You can create as many temperaturecontrol modules as you want, simply by giving a new module a name, and setting it's <tt>enable</tt> option to true</td>
+</tr>
+<tr>
+<td>temperature_control.<a href="/module-name">module_name</a>.thermistor_pin</td>
+<td><tt>0.23</tt></td>
+<td>Pin for the thermistor to read. ADC ports TH1 to TH4 are pins 0.23 to 0.26.</td>
+</tr>
+<tr>
+<td>temperature_control.<a href="/module-name">module_name</a>.readings_per_second</td>
+<td>20</td>
+<td>How many times per second to read temperature from the sensor.</td>
+</tr>
+<tr>
+<td>temperature_control.<a href="/module-name">module_name</a>.pwm_frequency</td>
+<td>2000</td>
+<td>How many times per second to switch the heating element on or off. Set to a low value ( 20 ) if using a Solid State Relay.</td>
+</tr>
+<tr>
+<td>temperature_control.<a href="/module-name">module_name</a>.heater_pin</td>
+<td><tt>2.7</tt></td>
+<td>Pin that controls the heater. This can be used to control a Mosfet on board or an external Solid State Relay. Set to <tt>nc</tt> if a readonly thermistor is being defined</td>
+</tr>
+<tr>
+<td>temperature_control.<a href="/module-name">module_name</a>.thermistor</td>
+<td>EPCOS100K</td>
+<td>Set the thermistor model for this module. Several different common models are pre-defined, see <a href="http://smoothieware.org/temperaturecontrol#toc5">here for a list</a></td>
+</tr>
+<tr>
+<td>temperature_control.<a href="/module-name">module_name</a>.beta</td>
+<td>4066</td>
+<td>Manually set the <tt>beta</tt> value for your thermistor. This is useful if your thermistor is not in the common pre-defined models.</td>
+</tr>
+<tr>
+<td>temperature_control.<a href="/module-name">module_name</a>.r0</td>
+<td>100000</td>
+<td>Manually set the <tt>r0</tt> resistance value for your thermistor. This is useful if your thermistor is not in the common pre-defined models. Besides <tt>beta</tt> and <tt>r0</tt> which are properties of your thermistor, you can also set the <tt>r1</tt>, <tt>r2</tt> and <tt>t0</tt> values, but those are properties of your board so they usually never have to be changed.</td>
+</tr>
+<tr>
+<td>temperature_control.<a href="/module-name">module_name</a>.get_m_code</td>
+<td>105</td>
+<td>Calling this M-code will return the current temperature.</td>
+</tr>
+<tr>
+<td>temperature_control.<a href="/module-name">module_name</a>.set_m_code</td>
+<td>104</td>
+<td>This is the M-code for simply setting the temperature. For example here, the value is <tt>104</tt> so you use <tt>M104 S50</tt> to set this module's heater's temperature to 50.</td>
+</tr>
+<tr>
+<td>temperature_control.<a href="/module-name">module_name</a>.set_and_wait_m_code</td>
+<td>109</td>
+<td>This is the M-code for setting the temperature then waiting for that temperature to be reached before doing anything. For example here, the value is <tt>109</tt> so you use <tt>M109 S50</tt> to set this module's heater's temperature to 50 and then wait.</td>
+</tr>
+<tr>
+<td>temperature_control.<a href="/module-name">module_name</a>.designator</td>
+<td>T</td>
+<td>The letter this module's temperature will be identified as in the <tt>M105</tt> command's answer. For example here the value is T, so <tt>M105</tt> will answer <tt>ok T:23.4 /0.0 @0</tt></td>
+</tr>
+<tr>
+<td>temperature_control.<a href="/module-name">module_name</a>.p_factor</td>
+<td>13.7</td>
+<td>P factor for PID temperature regulation</td>
+</tr>
+<tr>
+<td>temperature_control.<a href="/module-name">module_name</a>.i_factor</td>
+<td>0.097</td>
+<td>I factor for PID temperature regulation</td>
+</tr>
+<tr>
+<td>temperature_control.<a href="/module-name">module_name</a>.d_factor</td>
+<td>24</td>
+<td>D factor for PID temperature regulation</td>
+</tr>
+<tr>
+<td>temperature_control.<a href="/module-name">module_name</a>.max_pwm</td>
+<td>64</td>
+<td>Maximum PWM value for the heating element. This can be from <tt>0</tt> to <tt>255</tt> . <tt>64</tt> is a good value if driving a 12v resistor with 24v. <tt>255</tt> is the default and the normal value if you are using the right voltage for your heating element.</td>
+</tr>
+<tr>
+<td>temperature_control.<a href="/module-name">module_name</a>.bang_bang</td>
+<td>false</td>
+<td>Set to true to use bang bang control rather than PID</td>
+</tr>
+<tr>
+<td>temperature_control.<a href="/module-name">module_name</a>.hysteresis</td>
+<td>2.0</td>
+<td>Set to the temperature in degrees C to use as hysteresis for bang bang control</td>
+</tr>
+<tr>
+<td>temperature_control.<a href="/module-name">module_name</a>.i_max</td>
+<td>64</td>
+<td>Maximum value for the I variable in the PID control. This should usually be set to about the same value as <tt>max_pwm</tt> ( as a rule of thumb, it is not actually a pwm setting ). This helps with preventing overshoot when initially heating up. If you get a strong ( &gt;10°C ) overshoot on startup, try setting this to a value lower than <tt>max_pwm</tt></td>
+</tr>
+<tr>
+<td>temperature_control.<a href="/module-name">module_name</a>.sensor</td>
+<td>thermistor</td>
+<td>Set the type of sensor used to read temperature. Values can be <tt>thermistor</tt> for the usual thermistor reading via ADC method, or <tt>max31855</tt> to read values from a thermocouple over SPI. See <a href="http://smoothieware.org/temperaturecontrol#thermocouple">Reading a thermocouple</a></td>
+</tr>
+<tr>
+<td>temperature_control.<a href="/module-name">module_name</a>.chip_select_pin</td>
+<td><tt>0.16</tt></td>
+<td>If the sensor is set to <tt>max31855</tt>, sets the chip select pin for the SPI port. This allows you to have multiple sensors sharing the same SPI port, as long as they each get a chip select ( CS ) pin.</td>
+</tr>
+<tr>
+<td>temperature_control.<a href="/module-name">module_name</a>.spi_channel</td>
+<td>0</td>
+<td>If the sensor is set to <tt>max31855</tt>, SPI channel using which to talk to the thermocouple chip.</td>
+</tr>
+<tr>
+<td>temperature_control.<a href="/module-name">module_name</a>.max_temp</td>
+<td>100</td>
+<td>If set, no temperature above this will be accepted.</td>
+</tr>
+</table>
+<div style="clear:both; height: 0px; font-size: 1px"></div>
+<div class="image-container floatright"><img src="http://chibidibidiwah.wdfiles.com/local--files/temperaturecontrol/upshot_4Q4Ah2HM.png" style="width: 420px" alt="upshot_4Q4Ah2HM.png" class="image" /></div>
+<h3 id="toc4"><span>Reading temperatures</span></h3>
+<p>To reach a desired temperature, you must be able to know what the current temperature is. This is done using a <a href="http://reprap.org/wiki/Thermistor">Thermistor</a> connected to an <a href="http://en.wikipedia.org/wiki/Analog-to-digital_converter">ADC</a> on the controller board, or a <a href="http://en.wikipedia.org/wiki/Thermocouple">Thermocouple</a>.</p>
+<h4 id="toc5"><span><a name="thermistor"></a> Thermistor</span></h4>
+<p>A given controller board only has a given number of <a href="http://en.wikipedia.org/wiki/Analog-to-digital_converter">ADCs</a> ( analog ( temperature ) to digital ( Smoothie ) converter ) capable pins.</p>
+<p>On the <a href="/smoothieboard">smoothieboard</a> for example, there are 4 thermistor inputs, labelled from <strong>T0</strong> to <strong>T3</strong>, and corresponding in the same order to the pins <strong>0.23</strong> to <strong>0.26</strong>. T0 is usually used for the hotend, and T1&nbsp;for the bed.</p>
+<p>Thermistor inputs are not polarized, the direction you connect them in on your board is not important.</p>
+<div class="code">
+<pre>
+<code>temperature_control.hotend.thermistor_pin        0.23</code>
+</pre></div>
+<table class="wiki-content-table">
+<tr>
+<th>Smoothieboard thermistor input name</th>
+<th>T0</th>
+<th>T1</th>
+<th>T2</th>
+<th>T3</th>
+</tr>
+<tr>
+<td>Pin for configuration</td>
+<td>0.23</td>
+<td>0.24</td>
+<td>0.25</td>
+<td>0.26</td>
+</tr>
+</table>
+<h4 id="toc6"><span>Choosing the right thermistor</span></h4>
+<p>There are different models of thermistors. Each hotend or heated bed has one, and it's a specific given type. Different thermistor models translate a given temperature into different resistances. This means you must tell Smoothie which exact thermistor model you have, to be sure Smoothie can read it correctly.</p>
+<p>This is done using the <strong>thermistor</strong> option in the configuration file. You pass it the name of your thermistor, and it will configure the math correctly accordingly.</p>
+<div class="code">
+<pre>
+<code>temperature_control.hotend.thermistor        EPCOS100K</code>
+</pre></div>
+<p>Smoothie does not know the name of all the thermistors in existence. At the moment these are the ones it knows about:</p>
+<table class="wiki-content-table">
+<tr>
+<th>Name</th>
+<th>Beta for 0-80°C</th>
+<th>Beta for 185-230°C</th>
+<th>I for Steinhart Hart</th>
+<th>J for Steinhart Hart</th>
+<th>K for Steinhart Hart</th>
+<th>Part number</th>
+</tr>
+<tr>
+<td><tt>EPCOS100K</tt></td>
+<td>4066</td>
+<td>4193</td>
+<td>0.000722378300319346F</td>
+<td>0.000216301852054578F</td>
+<td>9.2641025635702e-08F</td>
+<td>B57540G0104F000</td>
+</tr>
+<tr>
+<td><tt>Honeywell100K</tt></td>
+<td>3974</td>
+<td>4385</td>
+<td>0.000596153185928425F</td>
+<td>0.000231333192738335F</td>
+<td>6.19534004306738e-08F</td>
+<td>135-104LAG-J01</td>
+</tr>
+<tr>
+<td><tt>Semitec</tt></td>
+<td>4267</td>
+<td>4375</td>
+<td>0.000811290160145459F</td>
+<td>0.000211355789144265F</td>
+<td>7.17614730463848e-08F</td>
+<td>104GT-2</td>
+</tr>
+<tr>
+<td><tt>Honeywell-QAD</tt></td>
+<td></td>
+<td></td>
+<td>0.000827339299500986F</td>
+<td>0.000208786427208899F</td>
+<td>8.05595282332277e-08F</td>
+<td>135-104QAD-J01</td>
+</tr>
+<tr>
+<td><tt>RRRF100K</tt></td>
+<td>3960</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><tt>RRRF10K</tt></td>
+<td>3964</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><tt>HT100K</tt></td>
+<td>3990</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+<p><strong>In case you have a thermistor that is not known to Smoothie</strong> you can simply define the parameters in config. There are two methods, using the beta value ( good but not perfect ), and using the Steinhart Hart algorythm ( perfect ).</p>
+<p><strong>Using beta values :</strong></p>
+<p>Set the beta value in the configuration file :</p>
+<div class="code">
+<pre>
+<code>temperature_control.hotend.beta       4066   # set beta for thermistor</code>
+</pre></div>
+<div class="bs-callout bs-callout-warning">
+<h4><span>About beta values</span></h4>
+<p>The betas published by most manufacturers, are for the 0-80°C range.</p>
+<p>For the 185-230°C this results in readings being about 7-10°C too high.</p>
+<p>This means beta values are usually good for a heated bed, but not for a hotend.</p>
+</div>
+<p>If the thermistor is 100K ohms at 25°C then this is usually enough.</p>
+<p>You can also set r0,t0,r1,r2 but this is not usually needed as the defaults are sufficient.</p>
+<p>If you do not know what thermistor model you have, contact the designer or seller of your 3D&nbsp;printer, hotend or heated bed and get the spec which will tell you what the beta value is for the thermistor.</p>
+<p><strong>Using the Steinhart Hart algorythm :</strong></p>
+<p>This is the recommended method. Set the parameters in the configuration file :&nbsp;</p>
+<div class="code">
+<pre>
+<code>temperature_control.hotend.coefficients 0.000722376862540841,0.000216302098124288,0.000000092640163984</code>
+</pre></div>
+<p>To find what the Steinhart Hart coefficients for a given thermistor are, please read the <a href="/steinharthart">SteinhartHart</a> page.</p>
+<p>If you have the temperature curve for your thermistor, you can also define three points on that curve, and let Smoothie calculate everything :</p>
+<div class="code">
+<pre>
+<code>temperature_control.hotend.rt_curve          20.0,126800,150,1360,240,206.5</code>
+</pre></div>
+<h4 id="toc7"><span>Thermocouple</span></h4>
+<p><a name="thermocouple"></a></p>
+<p>Thermocouples are currently supported by connecting a MAX31855 chip to one of the SPI channels. Thermocouples give a stable measurement over a wide temperature range, and can typically withstand higher temperatures than thermistors.</p>
+<p>Note: Connecting a thermocouple and an LCD panel to the same SPI bus does not work.</p>
+<p>Here is an example of how to connect the <a href="http://www.adafruit.com/products/269">Adafruit Thermocouple Amplifier MAX31855 breakout board</a> to the smoothieboard.</p>
+<table class="wiki-content-table">
+<tr>
+<th>Smoothieboard</th>
+<th>Breakout board</th>
+</tr>
+<tr>
+<td>3v3</td>
+<td>Vin</td>
+</tr>
+<tr>
+<td>GND</td>
+<td>GND</td>
+</tr>
+<tr>
+<td>SSEL1</td>
+<td>CS</td>
+</tr>
+<tr>
+<td>MOSI1</td>
+<td>DO</td>
+</tr>
+<tr>
+<td>SCK1</td>
+<td>CLK</td>
+</tr>
+<tr>
+<td>MISO</td>
+<td>Not used</td>
+</tr>
+</table>
+<p>To configure smoothie to use the thermocouple connected like this, replace the thermistor and thermistor_pin parameters with the following:</p>
+<div class="code">
+<pre>
+<code>temperature_control.hotend.sensor        max31855</code>
+</pre></div>
+<p>The SPI channel and chip select pin can be changed using the following parameters:</p>
+<div class="code">
+<pre>
+<code>temperature_control.hotend.chip_select_pin    0.16
+temperature_control.hotend.spi_channel         0    # SPI channel 0 or 1</code>
+</pre></div>
+<h3 id="toc8"><span>Heating things up.</span></h3>
+<div class="image-container floatright"><img src="http://chibidibidiwah.wdfiles.com/local--files/3d-printer-guide/smoothieboard-mosfets.png" width="450px" alt="smoothieboard-mosfets.png" class="image" /></div>
+<p>To reach the desired temperature, you need a means of changing the temperature. This is usually done by letting current through :</p>
+<ul>
+<li>Resistors</li>
+<li>Heater cartridges</li>
+<li>PCB, kapton or silicone heater plates</li>
+</ul>
+<p>This is for example how hotends or heated beds are heated to their target temperature.</p>
+<p>The component turning the current on and off can be a <a href="http://en.wikipedia.org/wiki/MOSFET">mosFET</a> ( like on <a href="/smoothieboard">Smoothieboard</a> ) or a <a href="https://en.wikipedia.org/wiki/Solid-state_relay">Solid-State Relay</a> for example.</p>
+<p>This is controlled from the board running Smoothie using a GPIO&nbsp;pin. In the case of mosfets, on a [[Smoothieboard]], a given pin is connected to a given mosfet, and you have to use that specific pin to control that specific mosfet. See the schematic on the right or on the <a href="/smoothieboard">Smoothieboard</a> page to see what mosfet corresponds to what pin.</p>
+<div class="code">
+<pre>
+<code>temperature_control.hotend.heater_pin        2.7</code>
+</pre></div>
+<p><strong>Note on pins :</strong></p>
+<p>You can have a pin's output inverted by adding a <strong>&quot;!&quot;</strong> after this pin's number in the config line, example :</p>
+<div class="code">
+<pre>
+<code>my_pin_name                      19!</code>
+</pre></div>
+<p>There are other modifiers for pins :</p>
+<div class="bs-callout bs-callout-primary">
+<h4 id="toc9"><span>All options</span></h4>
+<table class="wiki-content-table">
+<tr>
+<td>!</td>
+<td>invert pin</td>
+</tr>
+<tr>
+<td>o</td>
+<td>set pin to open drain</td>
+</tr>
+<tr>
+<td>^</td>
+<td>set pin to pull up</td>
+</tr>
+<tr>
+<td>v</td>
+<td>set pin to pull down</td>
+</tr>
+<tr>
+<td>-</td>
+<td>to set no pullup</td>
+</tr>
+<tr>
+<td>@</td>
+<td>to set repeater mode</td>
+</tr>
+</table>
+</div>
+<h3 id="toc10"><span>Controlling with G-codes</span></h3>
+<p>By default, Smoothie will not heat anything. That could be a dangerous thing to do unwatched.</p>
+<p>You have to send <a href="http://reprap.org/wiki/G-code">G-codes</a> to turn your heater on and off, set a given temperature etc.</p>
+<p>There is a set of widely used G-codes corresponding to different usual actions ( for example setting the hotend temperature is <tt>M104</tt> in the <a href="http://reprap.org">Reprap</a> world ).</p>
+<p>But as you are defining your own custom temperature controller, you have to choose what gcode will be used to control it, Smoothie doesn't know what exactly it's controlling.</p>
+<p>So for example if this is a hotend, it will look something like this for the &quot;standard&quot; gcodes :&nbsp;</p>
+<div class="code">
+<pre>
+<code>temperature_control.hotend.set_m_code            104
+temperature_control.hotend.set_and_wait_m_code   109</code>
+</pre></div>
+<p><strong>set_m_code</strong> is used to set a given temperature, and continue running Smoothie immediately. <strong>set_and_wait_m_code</strong> is used to set a given temperature, and then pause Smoothie until that temperature is reached.</p>
+<h3 id="toc11"><span>Reading with G-code</span></h3>
+<p>There is a single g-code used to read temperature for all the temperature_control modules at the same time : <tt>M105</tt></p>
+<p>But it has to have a way to tell you what temperature corresponds to what specific module.</p>
+<p>There is a standard format for this which was used before Smoothie and still is today :</p>
+<div class="code">
+<pre>
+<code>ok T:22.1 /0.0 @0 B:22.5 /75.0 @210</code>
+</pre></div>
+<p>Here T is the hotend, and B is the bed. This is a convention. But in your configuration, we have to specify which is which :</p>
+<div class="code">
+<pre>
+<code>temperature_control.hotend.designator        T</code>
+</pre></div>
+<h3 id="toc12"><span>Bang Bang Control</span></h3>
+<p>The simplest form of heat control is called bang bang this simply turns the heater on or off depending on whether it is under or over the target temperature (plus some hysteresis).<br />
+This is best used for high amp beds using a relay to turn it on and off.</p>
+<p>to enable this form of control in the config define the following&#8230;</p>
+<div class="code">
+<pre>
+<code>temperature_control.bed.bang_bang            true            # set to true to use bang bang control rather than PID
+temperature_control.bed.hysteresis            2.0              # set to the temperature in degrees C to use as hysteresis when</code>
+</pre></div>
+<p>The default form of heater control is PID.</p>
+<h3 id="toc13"><span>PID</span></h3>
+<div class="image-container floatright"><img src="http://m.eet.com/media/1074906/0208bcfig2.gif" style="width: 450px" alt="0208bcfig2.gif" class="image" /></div>
+<p>PID is important. Without PID, a simple way to control temperature would be :</p>
+<ul>
+<li>If temperature too cold, turn heater on</li>
+<li>If temperature too hot, turn heater off</li>
+</ul>
+<p>But there is a big problem with that method. Due to temperature not travelling instantly in what you heat from the heater to the thermistor, when the thermistor reads a given temperature, the heater is already hotter than what the thermistor reads. And that overshooting is something we do not want. It means reaching temperatures that could be undesirable, and it means you will not be able to correctly stabilize the temperature.</p>
+<p>The solution to this is <a href="http://en.wikipedia.org/wiki/PID_controller">PID</a>. It uses some math, allowing us to correct those problems by turning the heater on and off in a smarter sequence.</p>
+<p>The P, I and D factors are configured as follows :</p>
+<div class="code">
+<pre>
+<code>temperature_control.hotend.p_factor     100
+temperature_control.hotend.i_factor     0.1
+temperature_control.hotend.d_factor     100</code>
+</pre></div>
+<p>But the really tricky thing is to find the right values for these 3 factors : the default ones are most probably wrong for your setup. So unless you have been given those values with your hardware, or you are a PID grand-master, you will need some help :</p>
+<div class="bs-callout bs-callout-warning">
+<h4><span>Marlin</span></h4>
+<p>Do not try to use PID settings from Marlin as they are not compatible.</p>
+</div>
+<h3 id="toc14"><span>PID autotuning</span></h3>
+<p>Using a process of trial and error, and some magic math, Smoothie can automatically tune ( find ) your P, I and D factors.</p>
+<p>Here is an example of the G-code command used to launch PID autotune :</p>
+<div class="code">
+<pre>
+<code>M303 E0 S190</code>
+</pre></div>
+<ul>
+<li>E<strong>0</strong> is the number of the temperaturecontrol module, in the order they have been configured. Here it would be 0 for the hotend, and 1 for the bed.</li>
+<li>S<strong>190</strong> is the temperature to autotune for. Use the temperature you will be using your heater at in real life. For a hotend here we use 190c</li>
+</ul>
+<p>When you run the command, tuning begins :</p>
+<div class="code">
+<pre>
+<code>Target: 190.0
+Start PID tune, command is M303 E0 S190
+T: Starting PID Autotune, M304 aborts
+ok
+T:  21.3/190.0 @80 1 0/8
+T:  22.0/190.0 @80 1 0/8
+T:  22.3/190.0 @80 1 0/8
+T:  22.1/190.0 @80 1 0/8
+Etc ...</code>
+</pre></div>
+<p>It continues for a while ( 8 loops ), heating up, cooling down, and trying new values. Then :</p>
+<div class="code">
+<pre>
+<code>T: 190.4/190.0 @0 0 7/8
+T: 190.2/190.0 @0 0 7/8
+Cycle 7:
+Max: 190.8  Min: 184.3  high time: 48.2s  low time: 7.5s
+Averages over last 3 cycles: Max:  81.8c  Min:  79.0c  high samples: 408  low samples:  68
+  ku: 17.7607
+  tu: 23.7929
+Trying:
+  Kp:  10.7
+  Ki: 0.045
+  Kd:    32
+PID Autotune Complete! The settings above have been loaded into memory, but not written to your config file.</code>
+</pre></div>
+<p>Now edit your configuration to use those three values ( <strong>Kp</strong> is <tt>p_factor</tt>, <strong>Ki</strong> is <tt>i_factor</tt>, <strong>Kd</strong> is <tt>d_factor</tt> ), reset, and temperature control should work much better.</p>
+<p>Alternatively, you can also enter the following G-code :</p>
+<div class="code">
+<pre>
+<code>M500</code>
+</pre></div>
+<p>Which will save the configuration values automatically in a configuration override file.</p>
+<p>Learn more about configuration overrides here : <a href="http://smoothieware.org/configuring-smoothie">Configuring Smoothie</a></p>
+<h3 id="toc15"><span>Fine Tuning</span></h3>
+<h4 id="toc16"><span>If you are using a 12v heater on a 24v system</span></h4>
+<p>you need to set max_pwm to 64</p>
+<div class="code">
+<pre>
+<code>temperature_control.hotend.max_pwm 64 #</code>
+</pre></div>
+<h4 id="toc17"><span>If you are getting 10°C or more initial overshoot of temperature</span></h4>
+<p>oyou can set i_max to a lower value (default is max_pwm)<br />
+128 seems to be a good value, but it can be tuned with <tt>M303 S0 Xnnn</tt> where nnn is a number &lt;= max_pwm</p>
+<div class="code">
+<pre>
+<code>temperature_control.hotend.i_max 128 #</code>
+</pre></div>
+<h4 id="toc18"><span>To avoid accidental setting of too high a temperature</span></h4>
+<p>you can set max_temp to the maximum temp that is safe for the target heater.<br />
+This will ignore any setting of temperatures that are higher than this and instead set the temp to max_temp.</p>
+<div class="code">
+<pre>
+<code>temperature_control.hotend.max_temp 230    #</code>
+</pre></div>
+<h2 id="toc19"><span>Supported G-codes</span></h2>
+<ul>
+<li><tt>M105</tt> :&nbsp; <strong>Configurable</strong>, Get the current temperature</li>
+<li><tt>M104</tt> :&nbsp; <strong>Configurable</strong>, Set the temperature target for this module. 104 is usually used for hotends, the S parameter is the temperature in °C, for example :&nbsp;<tt>M104 S150</tt></li>
+<li><tt>M109</tt> : <strong>Configurable</strong>, Set the temperature target for this module then wait for it to be reached. 109 is usually used for hotends, the S parameter is the temperature in °C, for example : <tt>M109 S150</tt></li>
+<li><tt>M140</tt> : <strong>Configurable</strong>, Set the temperature target for this module. 140 is usually used for heated beds, the S parameter is the temperature in °C, for example : <tt>M140 S50</tt></li>
+<li><tt>M190</tt> : <strong>Configurable</strong>, Set the temperature target for this module then wait for it to be reached. 190 is usually used for heated beds, the S parameter is the temperature in °C, for example : <tt>M190 S50</tt></li>
+<li><tt>M301</tt> : Edit temperature control PID parameters, for example : <tt>M301 S0 P30 I10 D10</tt>, where S is the number of the temperaturecontrol module to change the parameters for</li>
+<li><tt>M305</tt> :&nbsp; Set parameters for the thermistor, where <tt>B</tt> is beta, <tt>R</tt> is r0 and <tt>X</tt> is t0.</li>
+<li><tt>M500</tt> : Save volatile settings to an override file</li>
+<li><tt>M503</tt> : Display overridden settings if any</li>
+</ul>
+<p>Note : the lines above that say <strong>configurable</strong> mean that this is the usual command format, but that you can change the number in the configuration file.</p>
+</div>
+          
+          <div style="height:150px"></div>
+          <div class="page-info-break"></div>
+          <div class="page-options-container"><div id="page-info">page revision: 48, last edited: <span class="odate time_1421252561 format_%25e%20%25b%20%25Y%2C%20%25H%3A%25M%20%28%25O%20ago%29">14 Jan 2015 16:22</span></div>
+            <div id="page-options-bottom"  class="page-options-bottom">
+            <a href="javascript:;" class="btn btn-default" id="edit-button">Edit</a>
+<a href="javascript:;" class="btn btn-default" id="tags-button">Tags</a>
+
+<a href="javascript:;" class="btn btn-default" id="history-button">History</a>
+<a href="javascript:;" class="btn btn-default" id="files-button">Files</a>
+<a href="javascript:;" class="btn btn-default" id="print-button">Print</a>
+<a href="javascript:;" class="btn btn-default" id="site-tools-button">Site tools</a>
+<a href="javascript:;" class="btn btn-default" id="more-options-button">+&nbsp;Options</a> 
+</div>
+<div id="page-options-bottom-2" class="page-options-bottom form-actions" style="display:none">
+    <a href="javascript:;" class="btn btn-default" id="edit-sections-button">Edit Sections</a>
+    <a href="javascript:;" class="btn btn-default" id="edit-append-button">Append</a>
+    <a href="javascript:;" class="btn btn-default" id="edit-meta-button">Edit Meta</a>
+    <a href="javascript:;" class="btn btn-default" id="watchers-button">Watchers</a> 
+    <a href="javascript:;" class="btn btn-default" id="backlinks-button">Backlinks</a> 
+    <a href="javascript:;" class="btn btn-default" id="view-source-button">Page Source</a> 
+    <a href="javascript:;" class="btn btn-default" id="parent-page-button">Parent</a> 
+    <a href="javascript:;" class="btn btn-default" id="page-block-button">Lock Page</a>    
+    <a href="javascript:;" class="btn btn-default" id="rename-move-button">Rename</a> 
+    <a href="javascript:;" class="btn btn-default" id="delete-button">Delete</a> 
+</div>
+<div id="page-options-area-bottom">
+</div>
+</div>
+          <div id="action-area" style="display: none;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+ 
+<footer class="footer-wrap" role="contentinfo">
+  <div class="container footer">
+    <div class="options" style="display: block; visibility: visible;">
+    <a href="http://www.wikidot.com/doc" id="wikidot-help-button">Help</a>
+    &nbsp;|
+    <a href="http://www.wikidot.com/legal:terms-of-service" id="wikidot-tos-button">Terms of Service</a>
+    &nbsp;|
+    <a href="http://www.wikidot.com/legal:privacy-policy" id="wikidot-privacy-button">Privacy</a>
+    &nbsp;|
+    <a href="javascript:;" id="bug-report-button" onclick="WIKIDOT.page.listeners.pageBugReport(event)">Report a bug</a>
+    &nbsp;|
+    <a href="javascript:;" id="abuse-report-button" onclick="WIKIDOT.page.listeners.flagPageObjectionable(event)">Flag as objectionable</a>
+</div>
+Powered by <a href="http://www.wikidot.com">Wikidot.com</a> 
+    <div class="license-area">Unless otherwise stated, the content of this page is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 License</a></div>
+  </div>
+  <div class="extrac-div-1"><span></span></div>
+  <div class="extrac-div-2"><span></span></div>
+  <div class="extrac-div-3"><span></span></div>
+</footer>
+ 
+
+</div> <!-- container-wrap -->
+ 
+<div class="extra-div-1"><span></span></div>
+<div class="extra-div-2"><span></span></div>
+<div class="extra-div-3"><span></span></div>
+<div class="extra-div-4"><span></span></div>
+<div class="extra-div-5"><span></span></div>
+<div class="extra-div-6"><span></span></div>
+</div> <!-- container-wrap-wrap -->
+</div>
+<div id="dummy-ondomready-block" style="display: none;" ></div>
+    <!-- Google Analytics load -->
+    <script type="text/javascript">
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+    <!-- Quantcast -->
+    <script type="text/javascript">
+    _qoptions={
+        qacct:"p-edL3gsnUjJzw-"
+    };
+    (function() {
+        var qc = document.createElement('script'); qc.type = 'text/javascript'; qc.async = true;
+        qc.src = ('https:' == document.location.protocol ? 'https://secure' : 'http://edge') + '.quantserve.com/quant.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(qc, s);
+    })();
+    </script>
+    <noscript>
+        <img src="http://pixel.quantserve.com/pixel/p-edL3gsnUjJzw-.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/>
+    </noscript>
+
+
+
+
+<div id="page-options-bottom-tips" style="display: none;">
+    <div id="edit-button-hovertip">
+        Click here to edit contents of this page.    </div>
+</div>
+<div id="page-options-bottom-2-tips"  style="display: none;">
+    <div id="edit-sections-button-hovertip">
+        Click here to toggle editing of individual sections of the page (if possible).         Watch headings for an &quot;edit&quot; link when available.    </div>
+    <div id="edit-append-button-hovertip">
+        Append content without editing the whole page source.    </div>
+    <div id="history-button-hovertip">
+        Check out how this page has evolved in the past.    </div>
+    <div id="discuss-button-hovertip">
+        If you want to discuss contents of this page - this is the easiest way to do it.    </div>
+    <div id="files-button-hovertip">
+        View and manage file attachments for this page.    </div>
+    <div id="site-tools-button-hovertip">
+        A few useful tools to manage this Site.    </div>
+    <div id="backlinks-button-hovertip">
+        See pages that link to and include this page.    </div>
+    <div id="rename-move-button-hovertip">
+        Change the name (also URL address, possibly the category) of the page.    </div>
+    <div id="view-source-button-hovertip">
+        View wiki source for this page without editing.    </div>
+    <div id="parent-page-button-hovertip">  
+        View/set parent page (used for creating breadcrumbs and structured layout).    </div>
+            <div id="abuse-report-button-hovertip">
+            Notify administrators if there is objectionable content in this page.        </div>
+        <div id="bug-report-button-hovertip">
+            Something does not work as expected? Find out what you can do.        </div>
+        <div id="wikidot-help-button-hovertip">
+            General Wikidot.com documentation and help section.        </div>
+        <div id="wikidot-tos-button-hovertip">
+            Wikidot.com Terms of Service - what you can, what you should not etc.        </div>
+        <div id="wikidot-privacy-button-hovertip">
+            Wikidot.com Privacy Policy.          
+        </div>
+    </div>
+</body>
+</html>

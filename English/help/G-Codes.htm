@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <title>Supported G Codes - Smoothie Project</title>
+    
+    	<script type="text/javascript" src="http://www.wikidot.com/default__flow/login__CustomDomainScript?site_id=269117"></script>
+
+    
+    <script type="text/javascript" src="http://d3g0gp89917ko0.cloudfront.net/v--951c46c9f044/common--javascript/init.combined.js"></script>
+    <script  type="text/javascript">
+        var URL_HOST = 'www.wikidot.com';
+        var URL_DOMAIN = 'wikidot.com';
+        var USE_SSL =  true ;
+        var URL_STATIC = 'http://d3g0gp89917ko0.cloudfront.net/v--951c46c9f044';
+        // global request information
+        
+        var WIKIREQUEST = {};
+        WIKIREQUEST.info = {};
+        
+        WIKIREQUEST.info.domain = "smoothieware.org";
+        WIKIREQUEST.info.siteId = 269117;
+        WIKIREQUEST.info.siteUnixName = "chibidibidiwah";
+        WIKIREQUEST.info.categoryId = 1474485;
+        WIKIREQUEST.info.themeId = 256585;
+        WIKIREQUEST.info.requestPageName = "supported-g-codes";
+        OZONE.request.timestamp = 1427445996;
+        OZONE.request.date = new Date();
+        WIKIREQUEST.info.lang = 'en';
+                WIKIREQUEST.info.pageUnixName = "supported-g-codes";
+        WIKIREQUEST.info.pageId = 11802588;
+                        WIKIREQUEST.info.lang = "en";
+        OZONE.lang = "en";
+        var isUAMobile = !!/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    </script>
+    
+    
+
+
+    
+        <script  type="text/javascript">
+    
+        require.config({
+            baseUrl: URL_STATIC + '/common--javascript',
+            paths: {
+                'jquery.ui': 'jquery-ui.min',
+                'jquery.form': 'jquery.form'
+            }
+        });
+    
+    </script>
+    
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+            
+    
+    
+    
+    
+    <meta http-equiv="content-language" content="en"/>
+    <script type="text/javascript" src="http://d3g0gp89917ko0.cloudfront.net/v--951c46c9f044/common--javascript/WIKIDOT.combined.js"></script>
+            <script type="text/javascript" src="http://d3g0gp89917ko0.cloudfront.net/v--951c46c9f044/common--bootstrap/3.2.0/bootstrap.min.js"></script>
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        
+    
+    <style type="text/css" id="internal-style">
+        
+        /* modules */
+        
+                /* bootstrap */
+            @import url(http://d3g0gp89917ko0.cloudfront.net/v--951c46c9f044/common--bootstrap/3.2.0/bootstrap.min.css);
+                
+        /* theme */
+                    @import url(http://d3g0gp89917ko0.cloudfront.net/v--951c46c9f044/common--theme/bootstrap-base/css/style.css);
+                    @import url(http://chibidibidiwah.wdfiles.com/local--theme/bare/style.css);
+            </style>
+    
+            <link href="http://d3g0gp89917ko0.cloudfront.net/v--951c46c9f044/common--fonts/awesome/3.2.1/font-awesome.min.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        
+        
+        
+    <link rel="shortcut icon" href="/local--favicon/favicon.gif"/>
+    <link rel="icon" type="image/gif" href="/local--favicon/favicon.gif"/>
+    
+            <link rel="apple-touch-icon" href="/common--images/apple-touch-icon-57x57.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="/common--images/apple-touch-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="/common--images/apple-touch-icon-114x114.png" />
+        
+        
+            <link rel="alternate" type="application/wiki" title="Edit this page" href="javascript:WIKIDOT.page.listeners.editClick()"/>
+    
+        <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-18234656-1']);
+        _gaq.push(['_setDomainName', 'none']);
+        _gaq.push(['_setAllowLinker', true]);
+        _gaq.push(['_trackPageview']);
+
+        _gaq.push(['old._setAccount', 'UA-68540-5']);
+        _gaq.push(['old._setDomainName', 'none']);
+        _gaq.push(['old._setAllowLinker', true]);
+        _gaq.push(['old._trackPageview']);
+
+                _gaq.push(['userTracker._setAccount', 'UA-26338855-1']);
+        _gaq.push(['userTracker._trackPageview']);
+            </script>
+    
+    <script type="text/javascript">
+        window.google_analytics_uacct = 'UA-18234656-1';
+        window.google_analytics_domain_name = 'none';
+    </script>
+    
+    </head>
+<body id="html-body">
+<div id="skrollr-body">
+<!---------------------------------------------------------
+  Standard Template Layout
+  Developed by the Wikidot Community
+  Version: 1.00.140723
+---------------------------------------------------------->
+
+<div class="container-wrap-wrap">
+<div class="container-wrap">
+
+<div class="container">
+<header class="header-wrap" role="banner">
+  
+  <nav class="top-bar-wrap navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container top-bar">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-top-target">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/" style="display:none">Home</a>
+      </div>
+      <div class="collapse navbar-collapse navbar-top-target">
+
+        <ul class="nav navbar-nav">
+        
+
+<ul class="nav navbar-nav">
+<li><a href="http://smoothieware.org">Smoothie Firmware</a><br /></li>
+<li><a href="/smoothieboard">SmoothieBoard</a><br /></li>
+<li><a href="/smoothiepanel">SmoothiePanel</a><br /></li>
+<li><a href="/blog">Blog</a><br /></li>
+<li><a href="/gallery">Gallery</a><br /></li>
+<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Community</a><br />
+<ul class="dropdown-menu">
+<li><a href="http://smoothieware.org/irc">IRC ( recommended )</a></li>
+<li><a href="http://smoothieware.org/forum/c-496918/general">Forum</a></li>
+<li><a href="http://groups.google.com/group/smoothieware-support">Support Mailing list</a></li>
+<li><a href="http://groups.google.com/group/smoothie-dev">Dev Mailing list</a></li>
+</ul>
+</li>
+<li><a href="/search">Search</a><br /></li>
+</ul>
+
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="header-extra-div-1"><span></span></div>
+  <div class="header-extra-div-2"><span></span></div>
+  <div class="header-extra-div-3"><span></span></div>
+</header>
+</div>
+
+
+
+
+
+
+
+
+
+
+ 
+<main class="content-wrap" role="main">
+  <div class="container content">
+    <div class="row">
+    
+      
+      <div class="main-content-wrap col-md-12">
+        <div class="main-content">
+          <div class="page-title page-header" style="display:none"><span>Supported G Codes</span></div>
+          
+          <div id="page-content">
+
+<p>Smoothie is primarily a <a href="http://en.wikipedia.org/wiki/G-code">G-code</a> interpreter. Here is a list of the G-codes that are currently supported :</p>
+<table class="wiki-content-table">
+<tr>
+<th>G-Code</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+<tr>
+<td>G0</td>
+<td>Move to the given coordinates. To the contrary of G1, if there is a tool it will most of the time be off during this kind of move. This is a &quot;go to&quot; move rather than a &quot;do while going to&quot; move. The F parameter defines speed and is remembered by subsequent commands ( specified in millimetres/minute ) (command is <a data-toggle="modal" data-target=".wikidot-bs-modal-gmodal" href="">modal</a>)</td>
+<td><tt>G0 X10 Y-5 F100</tt></td>
+</tr>
+<tr>
+<td>G1</td>
+<td>Move to the given coordinates, see above for difference with G0. Takes the same F parameter as G0. (command is <a data-toggle="modal" data-target=".wikidot-bs-modal-gmodal" href="">modal</a>)</td>
+<td><tt>G1 X20 Y-2.3 F200</tt></td>
+</tr>
+<tr>
+<td>G2</td>
+<td>Clockwise circular motion :&nbsp;go to point with coordinates XYZ while rotating around point with relative coordinates IJ (command is not modal)</td>
+<td><tt>G2 X10 J5</tt></td>
+</tr>
+<tr>
+<td>G3</td>
+<td>Counter-clockwise motion : see above (command is not modal)</td>
+<td><tt>G3 Y5 X10 I2</tt></td>
+</tr>
+<tr>
+<td>G4</td>
+<td>Dwell S&lt;seconds&gt; or P&lt;milliseconds&gt;</td>
+<td><tt>G4 P1000</tt></td>
+</tr>
+<tr>
+<td>G10</td>
+<td>Do firmware extruder retract</td>
+<td><tt>G10</tt></td>
+</tr>
+<tr>
+<td>G11</td>
+<td>Do firmware extruder un-retract</td>
+<td><tt>G11</tt></td>
+</tr>
+<tr>
+<td>G17</td>
+<td>Select XYZ plane (command is <a data-toggle="modal" data-target=".wikidot-bs-modal-gmodal" href="">modal</a>)</td>
+<td><tt>G17</tt></td>
+</tr>
+<tr>
+<td>G18</td>
+<td>Select XZY plane (command is <a data-toggle="modal" data-target=".wikidot-bs-modal-gmodal" href="">modal</a>)</td>
+<td><tt>G18</tt></td>
+</tr>
+<tr>
+<td>G19</td>
+<td>Select YZX plane (command is <a data-toggle="modal" data-target=".wikidot-bs-modal-gmodal" href="">modal</a>)</td>
+<td><tt>G19</tt></td>
+</tr>
+<tr>
+<td>G20</td>
+<td>Inch mode :&nbsp;passed coordinates will be considered as Inches, so internally translated to millimeters (command is <a data-toggle="modal" data-target=".wikidot-bs-modal-gmodal" href="">modal</a>)</td>
+<td><tt>G20</tt></td>
+</tr>
+<tr>
+<td>G21</td>
+<td>Millimeter mode ( <em>default</em> ) : passed coordinates will be considered as millimeters (command is <a data-toggle="modal" data-target=".wikidot-bs-modal-gmodal" href="">modal</a>)</td>
+<td><tt>G21</tt></td>
+</tr>
+<tr>
+<td>G30</td>
+<td>Simple Z probe at current XY, reports distance moved down until probe triggers, optional F parameter sets feedrate</td>
+<td><tt>G30 - G30 F100</tt></td>
+</tr>
+<tr>
+<td>G31</td>
+<td>Report current Z probe status</td>
+<td><tt>G31</tt></td>
+</tr>
+<tr>
+<td>G32</td>
+<td>Uses Z probe to calibrate delta endstops and arm radius, use R parameter to select only arm radius calibration and E to select only endstop calibration. I to set target precision, J to set probe_radius, K to keep current endstop trim settings</td>
+<td><tt>G32 - G32 R - G32&#160;E - G32 EK - G32 I0.02</tt></td>
+</tr>
+<tr>
+<td><a data-toggle="modal" data-target=".wikidot-bs-modal-g28" href="">G28</a></td>
+<td>Home The given axis, or if no axis specified home all axis at the same time (edge)</td>
+<td><tt>G28</tt></td>
+</tr>
+<tr>
+<td>G90</td>
+<td>Absolute mode ( <em>default</em> ) : passed coordinates will be considered absolute ( relative to 0.0.0 ) (command is <a data-toggle="modal" data-target=".wikidot-bs-modal-gmodal" href="">modal</a>)</td>
+<td><tt>G90</tt></td>
+</tr>
+<tr>
+<td>G91</td>
+<td>Relative mode : passed coordinates will be considered relative to the current point (command is <a data-toggle="modal" data-target=".wikidot-bs-modal-gmodal" href="">modal</a>)</td>
+<td><tt>G91</tt></td>
+</tr>
+<tr>
+<td><a data-toggle="modal" data-target=".wikidot-bs-modal-g92" href="">G92</a></td>
+<td>Set current position to specified coordinates</td>
+<td><tt>G92 X0 Y0 Z0</tt></td>
+</tr>
+<tr>
+<th>M-Code</th>
+</tr>
+<tr>
+<td>M3</td>
+<td>Starts the spindle. The S parameter sets the speed in rotations per minute</td>
+<td><tt>M3 S5000</tt></td>
+</tr>
+<tr>
+<td>M5</td>
+<td>Stops the spindle</td>
+<td><tt>M5</tt></td>
+</tr>
+<tr>
+<td>M17</td>
+<td>Enable stepper motors</td>
+<td><tt>M17</tt></td>
+</tr>
+<tr>
+<td>M18</td>
+<td>Disable stepper motors</td>
+<td><tt>M18</tt></td>
+</tr>
+<tr>
+<td>M20</td>
+<td>List SD card files</td>
+<td><tt>M20</tt></td>
+</tr>
+<tr>
+<td>M21</td>
+<td>Initialize the SD card. This does nothing in Smoothie but is kept for compatibility</td>
+<td><tt>M21</tt></td>
+</tr>
+<tr>
+<td>M23</td>
+<td>Select a file</td>
+<td><tt>M23 file.gcode</tt></td>
+</tr>
+<tr>
+<td>M24</td>
+<td>Start or resume SD card print</td>
+<td><tt>M24</tt></td>
+</tr>
+<tr>
+<td>M25</td>
+<td>Pause SD card print</td>
+<td><tt>M25</tt></td>
+</tr>
+<tr>
+<td>M26</td>
+<td>Abort a SD card print</td>
+<td><tt>M26</tt></td>
+</tr>
+<tr>
+<td>M27</td>
+<td>Report print progress</td>
+<td><tt>M27</tt></td>
+</tr>
+<tr>
+<td>M28</td>
+<td>Begin write to SD card</td>
+<td><tt>M28 file.gcode</tt></td>
+</tr>
+<tr>
+<td>M30</td>
+<td>Delete a file on the SD card</td>
+<td><tt>M30 file.gcode</tt></td>
+</tr>
+<tr>
+<td>M32</td>
+<td>Select a file, and start playing it</td>
+<td><tt>M32 file.gcode</tt></td>
+</tr>
+<tr>
+<td>M82</td>
+<td>Set absolute mode for extruder only</td>
+<td><tt>M82</tt></td>
+</tr>
+<tr>
+<td>M83</td>
+<td>Set relative mode for extruder only</td>
+<td><tt>M83</tt></td>
+</tr>
+<tr>
+<td>M84</td>
+<td>Disable steppers</td>
+<td><tt>M84</tt></td>
+</tr>
+<tr>
+<td>M92</td>
+<td>Set axis steps per mm</td>
+<td><tt>M92 E200</tt></td>
+</tr>
+<tr>
+<td>M104</td>
+<td>Set Extruder Temperature - S&lt;temperature&gt;</td>
+<td><tt>M104 S190</tt></td>
+</tr>
+<tr>
+<td>M105</td>
+<td>Read current temp</td>
+<td><tt>M105</tt></td>
+</tr>
+<tr>
+<td>M106</td>
+<td>Turn fan ON</td>
+<td><tt>M106</tt></td>
+</tr>
+<tr>
+<td>M107</td>
+<td>Turn fan OFF</td>
+<td><tt>M107</tt></td>
+</tr>
+<tr>
+<td>M109</td>
+<td>Set Extruder Temperature and Wait - S&lt;temperature&gt;</td>
+<td><tt>M109 S190</tt></td>
+</tr>
+<tr>
+<td>M110</td>
+<td>Set current line number -N&lt;line number&gt;</td>
+<td><tt>M110 N123</tt></td>
+</tr>
+<tr>
+<td>M112</td>
+<td>Halt all operations, turn off heaters, go into Halt state</td>
+<td></td>
+</tr>
+<tr>
+<td>M114</td>
+<td>Show current position of all axes, XYZ will be the last requested position, whereas ABC is actual current position of the actuators</td>
+<td><tt>M114</tt></td>
+</tr>
+<tr>
+<td>M117</td>
+<td>Display message on LCD, blank message will clear it</td>
+<td><tt>M117 hello world or M117</tt></td>
+</tr>
+<tr>
+<td>M119</td>
+<td>Show limit switch status</td>
+<td><tt>M119</tt></td>
+</tr>
+<tr>
+<td>M120</td>
+<td>&quot;Push&quot; the current feed-rate and seek-rate so that another one can be temporarily used, then the current one can be restored</td>
+<td><tt>M120</tt></td>
+</tr>
+<tr>
+<td>M121</td>
+<td>&quot;Pop&quot; the current feed-rate and seek-rate, see M120</td>
+<td><tt>M121</tt></td>
+</tr>
+<tr>
+<td>M140</td>
+<td>Set Bed Temperature - S&lt;temperature&gt;</td>
+<td><tt>M140 S55</tt></td>
+</tr>
+<tr>
+<td>M190</td>
+<td>Set Bed Temperature and Wait - S&lt;temperature&gt;</td>
+<td><tt>M190 S55</tt></td>
+</tr>
+<tr>
+<td>M200</td>
+<td>Set E units for volumetric extrusion - D&lt;filament diameter&gt; set to 0 to disable volumetric extrusion</td>
+<td><tt>M200 D3.0</tt></td>
+</tr>
+<tr>
+<td>M203</td>
+<td>Set maximum feedrate your machine can sustain &lt;mm/sec&gt;</td>
+<td><tt>M203 X100 Y100 Z100 E10</tt></td>
+</tr>
+<tr>
+<td>M204</td>
+<td>S&lt;acceleration&gt; Set acceleration in mm/sec^2 Z&lt;acceleration&gt; NB Z only applies to Z only moves E&lt;nnn&gt; Set extruder only move acceleration</td>
+<td><tt>M204 S1000 Z100 E500</tt></td>
+</tr>
+<tr>
+<td>M205</td>
+<td>X&lt;junction deviation&gt; Z&lt;z junction deviation&gt; S&lt;minimum planner speed&gt;, Z junction deviation only applies to z only moves, 0 disables junction deviation for Z, -1 uses global junction deviation</td>
+<td><tt>M205 X0.05 S30.0</tt></td>
+</tr>
+<tr>
+<td>M206</td>
+<td>Set homing offsets</td>
+<td><tt>M206 X10 Y3 Z0.5</tt></td>
+</tr>
+<tr>
+<td>M207</td>
+<td>set retract length S[positive mm] F[feedrate mm/min] Z[additional zlift/hop] Q[zlift feedrate mm/min]</td>
+<td><tt>M207 S4 F30 Z1</tt></td>
+</tr>
+<tr>
+<td>M208</td>
+<td>set retract recover length S[positive mm surplus to the M207&#160;S*] F[feedrate mm/min]</td>
+<td><tt>M208 S0 F8</tt></td>
+</tr>
+<tr>
+<td>M220</td>
+<td>S&lt;factor in percent&gt;- set speed factor override percentage</td>
+<td><tt>M220 S50</tt></td>
+</tr>
+<tr>
+<td>M221</td>
+<td>S&lt;flow rate factor in percent&gt;- set flow rate factor override percentage for current extruder</td>
+<td><tt>M221 S50</tt></td>
+</tr>
+<tr>
+<td>M301</td>
+<td>Edit temperature control PID parameters</td>
+<td><tt>M301 S0 P30 I10 D10</tt></td>
+</tr>
+<tr>
+<td>M303</td>
+<td>Begin PID auto-tune cycle E&lt;hotendid&gt; S&lt;temperature&gt;</td>
+<td><tt>M303 E0 S185</tt> - Tune extruder - <tt>M303 E1 S100</tt> - Tune printbed -</td>
+</tr>
+<tr>
+<td>M304</td>
+<td>Abort PID auto-tuning</td>
+<td><tt>M304</tt></td>
+</tr>
+<tr>
+<td>M305</td>
+<td>Set parameters for the thermistor, where <tt>B</tt> is beta, <tt>R</tt> is r0 and <tt>X</tt> is t0</td>
+<td><tt>M305 B4066</tt></td>
+</tr>
+<tr>
+<td>M306</td>
+<td>Set homing offsets based on current position, subtracts current position from homing offset for specified axis</td>
+<td><tt>M306 Z0</tt></td>
+</tr>
+<tr>
+<td>M360</td>
+<td>Scara Morgan: Move to Theta 0 degree position</td>
+<td><tt>M360 or M360 P0</tt></td>
+</tr>
+<tr>
+<td>M361</td>
+<td>Scara Morgan: Move to Theta 90 degree position</td>
+<td><tt>M361 or M360 P0</tt></td>
+</tr>
+<tr>
+<td>M364</td>
+<td>Scara Morgan: M364: Move to Psi + Theta 90 degree position</td>
+<td><tt>M364 or M344 P0</tt></td>
+</tr>
+<tr>
+<td>M370</td>
+<td>Z grid strategy: clears the ZGrid and the bed leveling is disabled until G32 is run again</td>
+<td><tt>M370</tt></td>
+</tr>
+<tr>
+<td>M371</td>
+<td>Z grid strategy: moves the head to the next calibration postion without saving for manual calibration</td>
+<td><tt>M371</tt></td>
+</tr>
+<tr>
+<td>M372</td>
+<td>Z grid strategy: move the head to the next calibration postion after saving the current probe point to memory - manual calbration</td>
+<td><tt>M372</tt></td>
+</tr>
+<tr>
+<td>M373</td>
+<td>Z grid strategy: completes calibration and enables the Z compensation grid</td>
+<td><tt>M373</tt></td>
+</tr>
+<tr>
+<td>M374</td>
+<td>Z grid strategy: save calibration grid</td>
+<td><tt>M374</tt></td>
+</tr>
+<tr>
+<td>M375</td>
+<td>Z grid strategy: load calibration grid</td>
+<td><tt>M375</tt></td>
+</tr>
+<tr>
+<td>M400</td>
+<td>Wait for the queue to be empty before answering &quot;OK&quot;</td>
+<td><tt>M400</tt></td>
+</tr>
+<tr>
+<td>M500</td>
+<td>Save some volatile settings to an override file</td>
+<td><tt>M500</tt></td>
+</tr>
+<tr>
+<td>M501</td>
+<td>Load config-override file optionally specifying the extension</td>
+<td><tt>M501</tt> - loads config-override, <tt>M501 test1</tt> - loads config-override.test1</td>
+</tr>
+<tr>
+<td>M502</td>
+<td>Delete the override file, reverting to config settings at next reset</td>
+<td><tt>M502</tt></td>
+</tr>
+<tr>
+<td>M503</td>
+<td>Display overridden settings if any</td>
+<td><tt>M503</tt></td>
+</tr>
+<tr>
+<td>M504</td>
+<td>Save the settings to an override file with specified extension</td>
+<td><tt>M504 test1</tt> - saves to config-override.test1</td>
+</tr>
+<tr>
+<td>M557</td>
+<td>Defines probe points</td>
+<td><tt>M557 P1 X30 Y40.5</tt></td>
+</tr>
+<tr>
+<td>M561</td>
+<td>clears the plane and the bed leveling is disabled until G32 is run again</td>
+<td><tt>M561</tt></td>
+</tr>
+<tr>
+<td>M565</td>
+<td>defines the probe offsets from the nozzle or tool head</td>
+<td><tt>M565 X3 Y4.5 Z-2.37</tt></td>
+</tr>
+<tr>
+<td>M600</td>
+<td>Suspend print in progress (use console command resume to continue)</td>
+<td></td>
+</tr>
+<tr>
+<td>M665</td>
+<td>Set arm solution specific settings: Delta - L&lt;arm length&gt; R&lt;arm radius&gt; Z&lt;max height&gt;</td>
+<td><tt>M665 L341.0 R350 Z430</tt></td>
+</tr>
+<tr>
+<td>M666</td>
+<td>On a delta sets trim values for the endstops. (Positive values will crash physical endstops.)</td>
+<td><tt>M666 X-0.1 Y-0.2 Z-0.3</tt></td>
+</tr>
+<tr>
+<td>M907</td>
+<td>Set Current control for each axis</td>
+<td><tt>M907 X1.0 Y1.0 Z1.0 E1.5</tt></td>
+</tr>
+<tr>
+<td>M910</td>
+<td>Move a given number of steps, without acceleration ( for testing only )</td>
+<td><tt>M910 X100 F100</tt></td>
+</tr>
+<tr>
+<td>M957</td>
+<td>(with Spindle module enabled) Report the current spindle speed and PWM value</td>
+<td><tt>M957</tt></td>
+</tr>
+<tr>
+<td>M958</td>
+<td>(with Spindle module enabled) Report the current spindle PID parameters. <tt>M958 Px.xx Ix.xx Dx.xx</tt> will set them (to save the new values, you need to edit config file manually).</td>
+<td><tt>M958 P0.1</tt></td>
+</tr>
+<tr>
+<td>M999</td>
+<td>Reset from a halted state caused by limit switch, M112 or kill switch</td>
+<td></td>
+</tr>
+</table>
+<div class="modal fade wikidot-bs-modal-gmodal">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<p><a class="close" data-dismiss="modal" href=""><span style="white-space: pre-wrap;">×</span></a></p>
+<h4 id="toc0"><span>Modal G codes</span></h4>
+</div>
+<div class="modal-body">
+<p>Modal is defined as a command that stays active until its canceled. Example:</p>
+<div class="code">
+<pre>
+<code>G0 X7 Y8
+ X9 Y10</code>
+</pre></div>
+<p>Notice that the G0 does not need to be stated on the second line as the first G0 put the machine into that mode and it stays in that mode until a G1 is used.</p>
+<div class="bs-callout bs-callout-warning">
+<p>Note in smoothie there must be a space in front of a line that is affected by a modal G code.<br />
+Some G code processors like HeeksCNC don't prefix the space neither do they prefix each line with the modal G code.</p>
+</div>
+</div>
+<div class="modal-footer">
+<p><a class="btn btn-default" data-dismiss="modal" href="">Close</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade wikidot-bs-modal-g28">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<p><a class="close" data-dismiss="modal" href=""><span style="white-space: pre-wrap;">×</span></a></p>
+<h4 id="toc1"><span>G28 : Home to endstops</span></h4>
+</div>
+<div class="modal-body">
+<p>The <tt>G28</tt> G-code allows you to use the <a href="/endstops">Endstops</a> module to instruct one or more axis to move until it hits it's endstop.</p>
+<p>Issuing this command will home the X&nbsp;axis only :&nbsp;</p>
+<div class="code">
+<pre>
+<code>G28 X0</code>
+</pre></div>
+<p>Issuing this command will home all of the axes :</p>
+<div class="code">
+<pre>
+<code>G28</code>
+</pre></div>
+<p>For more information about G28, using and setting up homing, see the <a href="/endstops">Endstops</a> and <a href="/guide-endstops">Guide-Endstops</a> pages.</p>
+</div>
+<div class="modal-footer">
+<p><a class="btn btn-default" data-dismiss="modal" href="">Close</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade wikidot-bs-modal-g92">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<p><a class="close" data-dismiss="modal" href=""><span style="white-space: pre-wrap;">×</span></a></p>
+<h4 id="toc2"><span>G92 :&nbsp;Set current position</span></h4>
+</div>
+<div class="modal-body">
+<p>When you instruct Smoothie to move to a given position, it remembers where you sent it</p>
+<p>When you are in absolute mode, Smoothie will move from the origin to the target point, the origin point being the current position.</p>
+<p>You can change this current position using the <tt>G92</tt> command.</p>
+<p>You can change the position for a specific axis, here for example set the current X position to 10mm :</p>
+<div class="code">
+<pre>
+<code>G92 X10</code>
+</pre></div>
+<p>Or for multiple axes at once, for example here setting both the X and Y axis positions to 20mm :</p>
+<div class="code">
+<pre>
+<code>G92 X20 Y20</code>
+</pre></div>
+<p>This is quite useful for example to reset all axes to their zero position so that your current position becomes the &quot;home&quot; position.</p>
+</div>
+<div class="modal-footer">
+<p><a class="btn btn-default" data-dismiss="modal" href="">Close</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="footnotes-footer">
+<div class="title">Footnotes</div>
+<div class="footnote-footer" id="footnote-1"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-1')">1</a>. G Code comments begin at a semicolon, and end at the end of the line:<br />
+Example:<br />
+G0 X7 Y8 ;this is the comment</div>
+</div>
+</div>
+          
+          <div style="height:150px"></div>
+          <div class="page-info-break"></div>
+          <div class="page-options-container"><div id="page-info">page revision: 94, last edited: <span class="odate time_1424432569 format_%25e%20%25b%20%25Y%2C%20%25H%3A%25M%20%28%25O%20ago%29">20 Feb 2015 11:42</span></div>
+            <div id="page-options-bottom"  class="page-options-bottom">
+            <a href="javascript:;" class="btn btn-default" id="edit-button">Edit</a>
+<a href="javascript:;" class="btn btn-default" id="tags-button">Tags</a>
+
+<a href="javascript:;" class="btn btn-default" id="history-button">History</a>
+<a href="javascript:;" class="btn btn-default" id="files-button">Files</a>
+<a href="javascript:;" class="btn btn-default" id="print-button">Print</a>
+<a href="javascript:;" class="btn btn-default" id="site-tools-button">Site tools</a>
+<a href="javascript:;" class="btn btn-default" id="more-options-button">+&nbsp;Options</a> 
+</div>
+<div id="page-options-bottom-2" class="page-options-bottom form-actions" style="display:none">
+    <a href="javascript:;" class="btn btn-default" id="edit-sections-button">Edit Sections</a>
+    <a href="javascript:;" class="btn btn-default" id="edit-append-button">Append</a>
+    <a href="javascript:;" class="btn btn-default" id="edit-meta-button">Edit Meta</a>
+    <a href="javascript:;" class="btn btn-default" id="watchers-button">Watchers</a> 
+    <a href="javascript:;" class="btn btn-default" id="backlinks-button">Backlinks</a> 
+    <a href="javascript:;" class="btn btn-default" id="view-source-button">Page Source</a> 
+    <a href="javascript:;" class="btn btn-default" id="parent-page-button">Parent</a> 
+    <a href="javascript:;" class="btn btn-default" id="page-block-button">Lock Page</a>    
+    <a href="javascript:;" class="btn btn-default" id="rename-move-button">Rename</a> 
+    <a href="javascript:;" class="btn btn-default" id="delete-button">Delete</a> 
+</div>
+<div id="page-options-area-bottom">
+</div>
+</div>
+          <div id="action-area" style="display: none;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+ 
+<footer class="footer-wrap" role="contentinfo">
+  <div class="container footer">
+    <div class="options" style="display: block; visibility: visible;">
+    <a href="http://www.wikidot.com/doc" id="wikidot-help-button">Help</a>
+    &nbsp;|
+    <a href="http://www.wikidot.com/legal:terms-of-service" id="wikidot-tos-button">Terms of Service</a>
+    &nbsp;|
+    <a href="http://www.wikidot.com/legal:privacy-policy" id="wikidot-privacy-button">Privacy</a>
+    &nbsp;|
+    <a href="javascript:;" id="bug-report-button" onclick="WIKIDOT.page.listeners.pageBugReport(event)">Report a bug</a>
+    &nbsp;|
+    <a href="javascript:;" id="abuse-report-button" onclick="WIKIDOT.page.listeners.flagPageObjectionable(event)">Flag as objectionable</a>
+</div>
+Powered by <a href="http://www.wikidot.com">Wikidot.com</a> 
+    <div class="license-area">Unless otherwise stated, the content of this page is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 License</a></div>
+  </div>
+  <div class="extrac-div-1"><span></span></div>
+  <div class="extrac-div-2"><span></span></div>
+  <div class="extrac-div-3"><span></span></div>
+</footer>
+ 
+
+</div> <!-- container-wrap -->
+ 
+<div class="extra-div-1"><span></span></div>
+<div class="extra-div-2"><span></span></div>
+<div class="extra-div-3"><span></span></div>
+<div class="extra-div-4"><span></span></div>
+<div class="extra-div-5"><span></span></div>
+<div class="extra-div-6"><span></span></div>
+</div> <!-- container-wrap-wrap -->
+</div>
+<div id="dummy-ondomready-block" style="display: none;" ></div>
+    <!-- Google Analytics load -->
+    <script type="text/javascript">
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+    <!-- Quantcast -->
+    <script type="text/javascript">
+    _qoptions={
+        qacct:"p-edL3gsnUjJzw-"
+    };
+    (function() {
+        var qc = document.createElement('script'); qc.type = 'text/javascript'; qc.async = true;
+        qc.src = ('https:' == document.location.protocol ? 'https://secure' : 'http://edge') + '.quantserve.com/quant.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(qc, s);
+    })();
+    </script>
+    <noscript>
+        <img src="http://pixel.quantserve.com/pixel/p-edL3gsnUjJzw-.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/>
+    </noscript>
+
+
+
+
+<div id="page-options-bottom-tips" style="display: none;">
+    <div id="edit-button-hovertip">
+        Click here to edit contents of this page.    </div>
+</div>
+<div id="page-options-bottom-2-tips"  style="display: none;">
+    <div id="edit-sections-button-hovertip">
+        Click here to toggle editing of individual sections of the page (if possible).         Watch headings for an &quot;edit&quot; link when available.    </div>
+    <div id="edit-append-button-hovertip">
+        Append content without editing the whole page source.    </div>
+    <div id="history-button-hovertip">
+        Check out how this page has evolved in the past.    </div>
+    <div id="discuss-button-hovertip">
+        If you want to discuss contents of this page - this is the easiest way to do it.    </div>
+    <div id="files-button-hovertip">
+        View and manage file attachments for this page.    </div>
+    <div id="site-tools-button-hovertip">
+        A few useful tools to manage this Site.    </div>
+    <div id="backlinks-button-hovertip">
+        See pages that link to and include this page.    </div>
+    <div id="rename-move-button-hovertip">
+        Change the name (also URL address, possibly the category) of the page.    </div>
+    <div id="view-source-button-hovertip">
+        View wiki source for this page without editing.    </div>
+    <div id="parent-page-button-hovertip">  
+        View/set parent page (used for creating breadcrumbs and structured layout).    </div>
+            <div id="abuse-report-button-hovertip">
+            Notify administrators if there is objectionable content in this page.        </div>
+        <div id="bug-report-button-hovertip">
+            Something does not work as expected? Find out what you can do.        </div>
+        <div id="wikidot-help-button-hovertip">
+            General Wikidot.com documentation and help section.        </div>
+        <div id="wikidot-tos-button-hovertip">
+            Wikidot.com Terms of Service - what you can, what you should not etc.        </div>
+        <div id="wikidot-privacy-button-hovertip">
+            Wikidot.com Privacy Policy.          
+        </div>
+    </div>
+</body>
+</html>
