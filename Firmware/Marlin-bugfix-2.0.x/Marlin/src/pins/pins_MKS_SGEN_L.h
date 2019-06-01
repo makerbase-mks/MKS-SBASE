@@ -123,13 +123,13 @@
 #define TMC_USE_SW_SPI
 #if ENABLED(TMC_USE_SW_SPI)
   #ifndef TMC_SW_MOSI
-    #define TMC_SW_MOSI    P4_28   // AUX1
+    #define TMC_SW_MOSI    P4_28   
   #endif
   #ifndef TMC_SW_MISO
-    #define TMC_SW_MISO    P0_05   // AUX1
+    #define TMC_SW_MISO    P0_05   
   #endif
   #ifndef TMC_SW_SCK
-    #define TMC_SW_SCK     P0_04   // TH4
+    #define TMC_SW_SCK     P0_04   
   #endif
  #endif
 #endif
